@@ -21,13 +21,31 @@ header {
     margin-top: 8px;
     margin-left: 16px;
 }
+.pages {
+    padding-right: 100px;
+    gap: 100px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
 
-.btn {
-    border-radius: 14px;
-    background: #909090;
-    margin-top: 16px;
 }
 
+.btn {
+    display: inline-block;
+    position: absolute;
+    margin-top: 16px;
+    padding-top: 8px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+ 
+}
+.pages a:hover {
+    color:antiquewhite;
+    
+}
 .btn_random {
     margin-left: 36px;
 }
@@ -40,16 +58,10 @@ header {
     margin-left: 45px;
 }
 
-.btn_text {
-    color: #000;
-    font-size: 18px;
-    font-weight: 700;
-}
 
 .search {
     width: 256px;
     height: 37px;
-    display: flex;
     justify-content: center;
     align-items: center;
     background-color: #fff;
@@ -58,5 +70,26 @@ header {
 }
 .search_icon {
     width: 21px;
-    justify-self: flex-start;
+
+}
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    background-image: url('../icons/search.svg');
+    background-size: 21px;
+    background-position: 10px 15px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    margin-top: 8px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 100%;
 }
