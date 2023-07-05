@@ -136,12 +136,12 @@ input[type=text]:focus {
 input {
     outline: none;
 }
-
-.intro {
-    width: 300vh;
-    height: 100vh;
+.welcome-text {
+display: block;
+margin: 0 auto;
+justify-content: center;
+align-items: center;
 }
-
 .become-text {
     color: #fff;
     font-size: 36px;
@@ -161,12 +161,9 @@ input {
     height: 225px;
     left: 0;
     top: 0;
-    display: flex;
-    justify-content:center;
-    align-items: center;
+    display:block;
 }
 .marvel-card {
-    margin-left: 200px;
     width: 225px;
     height: 225px;
     position: relative;
@@ -179,14 +176,14 @@ input {
     left: 0;
     top: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
     transition: 1s;
     backface-visibility: hidden;
 }
 .back {
     transform: rotateY(180deg);
 }
-
+.cards {
+    margin: auto auto;
+}
 .marvel-card:hover .front {transform: rotateY(180deg);}
 .marvel-card:hover .back {transform: rotateY(360deg);}

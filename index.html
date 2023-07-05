@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,11 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/three.r134.min.js"></script>
+    <script src="js/vanta.net.min.js"></script>
+    <script src="js/script.js" defer> </script>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -21,57 +26,61 @@
                     </a>
                 </div>
                 <div class="col-2 pages">
-                    <a  href="random.html" class="random">
+                    <a href="random.html" class="random">
                         СЛУЧАЙНЫЙ
                     </a>
                 </div>
                 <div class="col-2 pages">
-                    <a  href="#" class="browse-all">
+                    <a href="#" class="browse-all">
                         ОБЗОР
                     </a>
                 </div>
                 <div class="col-2 pages">
-                    <a  href="#" class="compare">
+                    <a href="#" class="compare">
                         СРАВНИТЬ
                     </a>
                 </div>
                 <div class="col-3 offset-1">
-                    <input type="text" name = "search" placeholder="поиск..." >
+                    <input type="text" name="search" placeholder="поиск...">
                 </div>
             </div>
         </div>
     </header>
-    <div id="intro" class = "intro">
-        <div class="welocometext">
+    <section class="intro" id="intro">
+        <div class="container">
             <div class="row">
-                <div class="col-8">
-                    <div class="become-text">
-                        СТАНЬ НАСТОЯЩИМ <strike>задротом</strike> ГИКОМ
+                <div class="welocometext">
+                    <div class="col-8">
+                        <div class="become-text">
+                            СТАНЬ НАСТОЯЩИМ <strike>задротом</strike> ГИКОМ
+                        </div>
+                        <div class="underbecome-text">
+                            <div> здесь ты сможешь пополнить свои знания о героях и </div>
+                            <div> злодеях различных комиксов, сериалов и кино... </div>
+                        </div>
                     </div>
-                     <div class="underbecome-text">
-                       <div> здесь ты сможешь пополнить свои знания о героях и </div> 
-                        <div> злодеях различных комиксов, сериалов и кино... </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <div class="wrap">
+                        <div class="cards">
+                            <div class="marvel-card">
+                                <div class="front">
+                                    <img src="icons/marvelLogo.svg" alt="">
+                                </div>
+                                <div class="back">
+                                    <img src="icons/MarvelBehindCard.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-3">
-               <div class="wrap">
-                <div class="marvel-card">
-                    <div class="front">
-                        <img src="icons/marvelLogo.svg" alt="">
-                    </div>
-                    <div class="back">
-                        <img src="icons/MarvelBehindCard.svg" alt="">
-                    </div>
-                </div>
-               </div>
-            </div>
-        </div>
-    </div>
-    <script src="js/three.r134.min.js"></script>
-    <script src="js/vanta.net.min.js"></script>
-    <script src="js/script.js" defer> </script>
+    </section>
+
+
 </body>
+
 </html>
