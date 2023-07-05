@@ -24,7 +24,7 @@
 	}
 }; */
 VANTA.NET({
-	el: "#intro",
+	el: '#intro',
 	mouseControls: true,
 	touchControls: true,
 	gyroControls: false,
@@ -34,4 +34,4 @@ VANTA.NET({
 	scaleMobile: 1.00,
 	color: 0x500505,
 	backgroundColor: 0x1e
-  })
+});
