@@ -1,5 +1,18 @@
 'use strict';
 
+// let image;
+
+// image.src = '../img/marvel_bg.png';
+
+// image.onload = function () {
+// 	$('.element').css('background-image',
+// 		'url(\'' + image.src + '\')');
+// };
+
+// ('.cards_block .card').hover(function () {
+// 	(this).attr('src', 'img/marvel_logo.png');
+// });
+
 /* window.onload = () => {
 	const transition_el = document.querySelector('.transition');
 	const anchors = document.querySelectorAll('a');
@@ -32,6 +45,6 @@ VANTA.NET({
 	minWidth: 1920.00,
 	scale: 1.00,
 	scaleMobile: 1.00,
-	color: 0x500505,
-	backgroundColor: 0x1e
+	color: 0xDF2157,
+	backgroundColor: 0x000C2C
 });
