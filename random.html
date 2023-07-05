@@ -6,51 +6,48 @@
     <title>SuperHero</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <script src="js/three.r134.min.js"></script>
+    <script src="js/vanta.net.min.js"></script>
+    <script src="js/script.js" defer> </script>
 </head>
 <body>
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-2">
-                    <a href="index.html" class="logo">
-                        <img src="icons/logo.svg" alt="logo">
+                <div class="col-2 col_logo">
+                    <a href="./index.html" class="logo">
+                        <img src="icons/logo.svg" alt="logo" class="logo_image">
                     </a>
                 </div>
-                <div class="col-1">
-                    <a href="#" class="avatar">
-                        <img src="icons/avatar.svg" alt="avatar">
+                <div class="col-2 pages">
+                    <a href="random.html" class="random">
+                        СЛУЧАЙНЫЙ
                     </a>
                 </div>
-                <div class="col-6">
-                    <div class="pages">
-                        <div class="col-2">
-                            <a  href="random.html" class="btn btn_random">
-                                    СЛУЧАЙНЫЙ
-                            </a>
-                        </div>
-                        <div class="col-2">
-                            <a  href="#" class="btn btn_browse-all">
-                                    ПРОСМОТРЕТЬ ВСЕХ
-                            </a>
-                        </div>
-                        <div class="col-2">
-                            <a  href="#" class="btn btn_compare">
-                                    СРАВНИТЬ
-                            </a>
-                        </div>
-                    </div>
+                <div class="col-2 pages">
+                    <a href="#" class="browse-all">
+                        ОБЗОР
+                    </a>
                 </div>
-                <div class="col-3">
-                    <input type="text" name = "search" placeholder="поиск..." >
-                    </div>
+                <div class="col-2 pages">
+                    <a href="#" class="compare">
+                        СРАВНИТЬ
+                    </a>
+                </div>
+                <div class="col-3 offset-1">
+                    <input type="text" name="search" placeholder="поиск...">
                 </div>
             </div>
         </div>
     </header>
+    <section class="intro" id="intro">
+        <div class="container">
+        </div>
+    </section>
     <!-- <script src="js/script.js"></script> -->
 </body>
 </html>
