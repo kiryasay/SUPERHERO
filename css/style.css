@@ -37,7 +37,7 @@
     width: 225px;
     height: 225px;
     border-radius: 28px;
-    transition: var(--transform-speed) ease-in-out;
+    transition: var(--transform-speed) ease;
     background: url('../img/card_bg_grey.svg') center center/cover no-repeat;
     outline: #69696A solid 0px;
 }
@@ -45,7 +45,7 @@
 .cards_block .card .card_img{
     width: 176px;
     height: 72px;
-    transition: calc(var(--transform-speed)*2) ease-in-out;
+    transition: calc(var(--transform-speed)*2) ease;
     background: url('../img/marvel_black-and-white.png') center center/cover no-repeat;
 }
 
