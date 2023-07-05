@@ -155,7 +155,7 @@ align-items: center;
     text-align: center;
 
 }
-.wrap {
+/* .wrap { стили для карточек
     position: absolute;
     width: 225px;
     height: 225px;
@@ -182,8 +182,6 @@ align-items: center;
 .back {
     transform: rotateY(180deg);
 }
-.cards {
-    margin: auto auto;
-}
+
 .marvel-card:hover .front {transform: rotateY(180deg);}
-.marvel-card:hover .back {transform: rotateY(360deg);}
+.marvel-card:hover .back {transform: rotateY(360deg);} */
