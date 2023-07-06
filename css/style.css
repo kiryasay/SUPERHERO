@@ -79,6 +79,16 @@ body {
     background: url('../img/sw_bg.png') center center/cover no-repeat;
 }
 
+.cards_block .card-tmnt-bg:hover{
+    outline: #aaca4e solid 3px;
+    background: url('../img/tmnt_bg.png') center center/cover no-repeat;
+}
+
+.cards_block .card-anime-bg:hover{
+    outline: #b4badf solid 3px;
+    background: url('../img/anime_bg-colored.png') center center/cover no-repeat;
+}
+
 /* логотипы */
 .cards_block .card-marvel-bg:hover .card_img{
     background: url('../img/marvel_logo.png') center center/cover no-repeat;
@@ -90,6 +100,16 @@ body {
 
 .cards_block .card-sw-bg:hover .card_img{
     background: url('../img/sw_logo.png') center center/cover no-repeat;
+}
+
+.cards_block .card-tmnt-bg:hover .card_img{
+    background: url('../img/tmnt_logo.png') center center/cover no-repeat;
+}
+
+.cards_block .card-anime-bg:hover .card_img{
+    background: url('../img/anime_logo.png') center center/cover no-repeat;
+    width: 170px;
+    height: 118px;
 }
 
 
@@ -110,6 +130,20 @@ body {
     height: 190px;
 }
 
+.cards_block .card-tmnt-bg .card_img{
+    width: 175px;
+    height: 63px;
+}
+
+.cards_block .card-anime-bg .card_img{
+    /* width: 199px;
+    height: 152px; */
+    width: 188px;
+    height: 42px;
+    /* max-width: 199px;
+    max-height: 52px; */
+}
+
 .cards_block .card .card-marvel-logo{
     background: url('../img/marvel_black-logo.png') center center/cover no-repeat;
 }
@@ -122,6 +156,13 @@ body {
     background: url('../img/sw_black-logo.png') center center/cover no-repeat;
 }
 
+.cards_block .card .card-tmnt-logo{
+    background: url('../img/tmnt_black-logo.png') center center/cover no-repeat;
+}
+
+.cards_block .card .card-anime-logo{
+    background: url('../img/anime_black-logo.png') center center/cover no-repeat;
+}
 
 .cards-text{
     position: relative;
