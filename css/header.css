@@ -22,7 +22,6 @@ header {
     text-decoration: none;
     width: 188px;
     height: 66px;
-    margin-top: 6px;
     margin-left: 7px;
 }
 
@@ -85,4 +84,8 @@ header {
 
 .compare {
     margin-left: 95px;
+}
+
+.find {
+    margin-left: 110px;
 }

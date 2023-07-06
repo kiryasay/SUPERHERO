@@ -1,20 +1,24 @@
+
+body {
+    overflow-y: hidden;
+}
+
 .welcome-text {
-    padding-top: 61px;
+    padding-top: 35px;
 }
 
 .become-text {
-    color: #fff;
+    color: #FEFDFA;
     font-size: 36px;
     font-weight: 900;
     text-align: center;
-    /* margin-top: 70px; */
 }
+
 .underbecome-text  {
-    color: #fff;
+    color: #FEFDFA;
     font-size: 18px;
     font-weight: 700;
     text-align: center;
-
 }
 
 .become-text .nerd {
@@ -23,6 +27,7 @@
 
 .cards_block{
     margin-top: 40px;
+    margin-left: 102px;
     display: flex;
     justify-content: center;
     gap: 51px;
@@ -44,28 +49,93 @@
     outline: #69696A solid 0px;
 }
 
-.cards_block .card .card_img{
-    width: 152px;
-    height: 62px;
-    transition: calc(var(--transform-speed)*2) ease;
-    background: url('../img/marvel_black-and-white.png') center center/cover no-repeat;
-}
-
 .cards_block .card:hover{
-    background: url('../img/marvel_bg.png') center center/cover no-repeat;
-    outline: #B61717 solid 3px;
     transform: scale(1.1);
 }
 
 .cards_block .card:hover .card_img{
-    background: url('../img/marvel_logo.png') center center/cover no-repeat;
     transform: 
         scale(1.05)
         translateY(-0.3rem);
 }
 
-.cards_block .card .card_marvel_logo{
-    width: 85%;
+.cards_block .card .card_img{
+    transition: calc(var(--transform-speed)*2) ease;
+}
+
+/* фоны */
+.cards_block .card-marvel-bg:hover{
+    outline: #B61717 solid 3px;
+    background: url('../img/marvel_bg.png') center center/cover no-repeat;
+}
+
+.cards_block .card-dc-bg:hover{
+    outline: #0376f2 solid 3px;
+    background: url('../img/dc_bg.png') center center/cover no-repeat;
+}
+
+.cards_block .card-sw-bg:hover{
+    outline: #ffe81f solid 3px;
+    background: url('../img/sw_bg.png') center center/cover no-repeat;
+}
+
+/* логотипы */
+.cards_block .card-marvel-bg:hover .card_img{
+    background: url('../img/marvel_logo.png') center center/cover no-repeat;
+}
+
+.cards_block .card-dc-bg:hover .card_img{
+    background: url('../img/dc_logo.png') center center/cover no-repeat;
+}
+
+.cards_block .card-sw-bg:hover .card_img{
+    background: url('../img/sw_logo.png') center center/cover no-repeat;
+}
+
+
+/* размеры логотипов */
+
+.cards_block .card-marvel-bg .card_img{
+    width: 152px;
+    height: 62px;
+}
+
+.cards_block .card-dc-bg .card_img{
+    width: 124px;
+    height: 125px;
+}
+
+.cards_block .card-sw-bg .card_img{
+    width: 190px;
+    height: 190px;
+}
+
+.cards_block .card .card-marvel-logo{
+    background: url('../img/marvel_black-logo.png') center center/cover no-repeat;
+}
+
+.cards_block .card .card-dc-logo{
+    background: url('../img/dc_black-logo.png') center center/cover no-repeat;
+}
+
+.cards_block .card .card-sw-logo{
+    background: url('../img/sw_black-logo.png') center center/cover no-repeat;
+}
+
+
+.cards-text{
+    position: relative;
+    max-width: 333px;
+    height: 402px;
+    color: #FEFDFA;
+    font-size: 24px;
+    font-weight: 800;
+    bottom: 400px;
+    left: 900px;
+}
+
+.cards-text .heroes-text{
+    margin-bottom: 160px;
 }
 
 /* .wrap { стили для карточек
