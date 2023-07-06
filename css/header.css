@@ -1,6 +1,7 @@
 * {
     font-family: 'Nunito', sans-serif;
 }
+
 body {
 
     overflow-x: hidden;
@@ -9,7 +10,7 @@ body {
 header {
     padding: 17px 9px 23px 0;
     height: 100px;
-    background-color: #00001E;
+    background-color: #000C2C;
 }
 
 .col_logo, .col_avatar{
@@ -35,11 +36,13 @@ header {
     margin-top: 8px;
     margin-left: 24px;
 }
+
 .pages {
     margin-top: 22px;
     font-weight: 700;
     font-size: 18px;
 }
+
 .pages a {
     display: inline-block;
     color: white;
@@ -47,13 +50,15 @@ header {
     cursor: pointer;
     position: relative;
 }
+
 .pages a:hover {
-    color :#9A0B05;
+    color :#DF2157;
 }
+
 .pages a:after {
     display: block;
     content: "";
-    background-color: #9A0B05;
+    background-color: #DF2157;
     height: 3px;
     width: 0%;
     left: 50%;
@@ -65,13 +70,11 @@ header {
     -moz-transform: translateX(-50%);
     transform: translateX(-50%);
 }
-.pages a:hover:after,
-.pages a:focus:after {
+
+.pages a:hover:after, .pages a:focus:after {
     width: 100%;
 }
 
-
-    
 .random {
     margin-left: 76px;
 }
@@ -82,4 +85,45 @@ header {
 
 .compare {
     margin-left: 95px;
+}
+
+
+.search {
+    width: 256px;
+    height: 37px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 14px;
+    margin-top: 13px;
+}
+.search_icon {
+    width: 21px;
+
+}
+input[type=text] {
+    /* width: 25px; */
+    width: 100%;
+    height: 45px;
+    box-sizing: border-box;
+    border: 2px solid #00001E;
+    border-radius: 35px;
+    font-size: 16px;
+    background-image: url('../icons/search.svg');
+    background-size: 20px;
+    background-position: 19px 12px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    margin-top: 14px;
+    /* -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out; */
+    
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 100%;
+}
+input {
+    outline: none;
 }
