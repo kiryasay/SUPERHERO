@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperHero</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/find.css">
+    <script src="js/three.r134.min.js"></script>
+    <script src="js/vanta.net.min.js"></script>
+    <script src="js/script.js" defer> </script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-2 col_logo">
+                    <a href="./index.html" class="logo">
+                        <img src="icons/logo.svg" alt="logo" class="logo_image">
+                    </a>
+                </div>
+                <div class="col-2 pages">
+                    <a href="random.html" class="random">
+                        СЛУЧАЙНЫЙ
+                    </a>
+                </div>
+                <div class="col-2 pages">
+                    <a href="#" class="browse-all">
+                        ОБЗОР
+                    </a>
+                </div>
+                <div class="col-2 pages">
+                    <a href="#" class="compare">
+                        СРАВНИТЬ
+                    </a>
+                </div>
+                <div class="col-2 pages">
+                    <a href="find.html" class="find">
+                        НАЙТИ ГЕРОЯ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="intro" id="intro">
+        <div class="main-wrapper">
+            <div class="app">
+                <div class="app-header">
+                    <form class="app-header-search">
+                        <input type="text" class="form-control" placeholder="Найди своего героя..." name="search">
+                        <button type="submit" class="search-bth">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <div class="search-list" id="search-list">
+                            <div class="search-list-item">
+                                <img src="icons/questsgn.svg" alt="">
+                                <p>????</p>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="app-body">
+                    <div class="app-body-content">
+                        <div class="app-body-content-thumbnail">
+                            <img src="icons/questsgn.svg" alt="">
+                        </div>
+                        <div class="app-body-content-list">
+                            <div class="name">????</div>
+                            <div class="app-body-tabs-head">
+                                <button type="button" class="tab-head-single" data-id = "1">
+                                    <span>СТАТЫ</span>
+                                </button>
+                                <button type="button" class="tab-head-single" data-id = "2">
+                                    <span>БИОГРАФИЯ</span>
+                                </button>
+                                <button type="button" class="tab-head-single" data-id = "3">
+                                    <span>ВНЕШНОСТЬ</span>
+                                </button>
+                                <button type="button" class="tab-head-single" data-id = "4">
+                                    <span>СВЯЗИ</span>
+                                </button>
+                            </div>
+                            <div class="app-body-tabs-body">
+                                <ul class="tab-body-single powerstats">
+                                    <li>
+                                        <div>
+                                            <i class = "fa-solid fa-shield-halved"></i>
+                                            <span>ИНТЕЛЛЕКТ</span>
+                                        </div>
+                                        <span>?</span>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <i class = "fa-solid fa-shield-halved"></i>
+                                            <span>СИЛА</span>
+                                        </div>
+                                        <span>?</span>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <i class = "fa-solid fa-shield-halved"></i>
+                                            <span>СКОРОСТЬ</span>
+                                        </div>
+                                        <span>?</span>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <i class = "fa-solid fa-shield-halved"></i>
+                                            <span>СТОЙКОСТЬ</span>
+                                        </div>
+                                        <span>?</span>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <i class = "fa-solid fa-shield-halved"></i>
+                                            <span>ЭНЕРГИЯ</span>
+                                        </div>
+                                        <span>?</span>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <i class = "fa-solid fa-shield-halved"></i>
+                                            <span>СРАЖЕНИЕ</span>
+                                        </div>
+                                        <span>?</span>
+                                    </li>
+                                </ul>
+                                <ul class="tab-body-single biography">
+                                    <li>
+                                        <span>Полное имя</span>
+                                        <span>???</span>
+                                    </li>
+                                    <li>
+                                        <span>Альтер-эго</span>
+                                        <span>???</span>
+                                    </li>
+                                    <li>
+                                        <span>Псевдонимы</span>
+                                        <span>????</span>
+                                    </li>
+                                    <li>
+                                        <span>Место рождение</span>
+                                        <span>???</span>
+                                    </li>
+                                    <li>
+                                        <span>Первое появление</span>
+                                        <span>???</span>
+                                    </li>
+                                    <li>
+                                        <span>Издатель</span>
+                                        <span>???</span>
+                                    </li>
+                                </ul>
+                                <ul class="tab-body-single appearance">
+                                    <li>
+                                        <span>
+                                            <i class = "fas fa-star"></i> Пол
+                                        </span>
+                                        <span>???</span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <i class = "fas fa-star"></i> Раса
+                                        </span>
+                                        <span>???</span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <i class = "fas fa-star"></i> Рост
+                                        </span>
+                                        <span>???</span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <i class = "fas fa-star"></i> Вес
+                                        </span>
+                                        <span>???</span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <i class = "fas fa-star"></i> Цвет глаз
+                                        </span>
+                                        <span>???</span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <i class = "fas fa-star"></i> Цвет волос
+                                        </span>
+                                        <span>???</span>
+                                    </li>
+                                </ul>
+                                <ul class="tab-body-single connections">
+                                    <li>
+                                        <span>Команды</span>
+                                        <span>???</span>
+                                    </li>
+                                    <li>
+                                        <span>Родственники</span>
+                                        <span>???</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/find.js"></script>
