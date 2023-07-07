@@ -43,7 +43,7 @@ searchForm.addEventListener('submit', getInputValue);
 
 // api key => 727054372039115
 const fetchAllSuperHero = async(searchText) => {
-    let url = `https://www.superheroapi.com/api.php/727054372039115/search/${searchText}`;
+    let url = `https://www.superheroapi.com/api.php/106808315798405/search/${searchText}`;
     try{
         const response = await fetch(url);
         allData = await response.json();
@@ -96,42 +96,42 @@ const showSuperheroDetails = (data) => {
     document.querySelector('.powerstats').innerHTML = `
     <li>
         <div>
-            <i class = "fa-solid fa-shield-halved"></i>
+            <i class = "fa-solid fa-brain"></i>
             <span>Интеллект</span>
         </div>
         <span>${data[0].powerstats.intelligence}</span>
     </li>
     <li>
         <div>
-            <i class = "fa-solid fa-shield-halved"></i>
+            <i class="fa-solid fa-dumbbell"></i>
             <span>Сила</span>
         </div>
         <span>${data[0].powerstats.strength}</span>
     </li>
     <li>
         <div>
-            <i class = "fa-solid fa-shield-halved"></i>
+            <i class = "fa-solid fa-person-running"></i>
             <span>Скорость</span>
         </div>
         <span>${data[0].powerstats.speed}</span>
     </li>
     <li>
         <div>
-            <i class = "fa-solid fa-shield-halved"></i>
+            <i class = "fa-solid fa-shield"></i>
             <span>Стойкость</span>
         </div>
         <span>${data[0].powerstats.durability}</span>
     </li>
     <li>
         <div>
-            <i class = "fa-solid fa-shield-halved"></i>
+            <i class = "fa-solid fa-fire"></i>
             <span>Энергия</span>
         </div>
         <span>${data[0].powerstats.power}</span>
     </li>
     <li>
         <div>
-            <i class = "fa-solid fa-shield-halved"></i>
+            <i class = "fa-solid fa-hand-fist"></i>
             <span>Сражение</span>
         </div>
         <span>${data[0].powerstats.combat}</span>
@@ -168,37 +168,37 @@ const showSuperheroDetails = (data) => {
     document.querySelector('.appearance').innerHTML = `
     <li>
         <span>
-            <i class = "fas fa-star"></i> Пол
+            <i class = "fa-solid fa-venus-mars"></i> Пол
         </span>
         <span>${data[0].appearance['gender']}</span>
     </li>
     <li>
         <span>
-            <i class = "fas fa-star"></i> Раса
+            <i class = "fa-solid fa-person"></i> Раса
         </span>
         <span>${data[0].appearance['race']}</span>
     </li>
     <li>
         <span>
-            <i class = "fas fa-heart"></i> Рост
+            <i class = "fa-solid fa-arrows-up-down"></i> Рост
         </span>
-        <span>${data[0].appearance['height'][0]}</span>
+        <span>${data[0].appearance['height'][1]}</span>
     </li>
     <li>
         <span>
-            <i class = "fas fa-star"></i> Вес
+            <i class = "fa-solid fa-weight-hanging"></i> Вес
         </span>
-        <span>${data[0].appearance['weight'][0]}</span>
+        <span>${data[0].appearance['weight'][1]}</span>
     </li>
     <li>
         <span>
-            <i class = "fas fa-star"></i> Цвет глаз
+            <i class = "fa-solid fa-eye"></i> Цвет глаз
         </span>
         <span>${data[0].appearance['eye-color']}</span>
     </li>
     <li>
         <span>
-            <i class = "fas fa-star"></i> Цвет волос
+            <i class = "fa-solid fa-droplet"></i> Цвет волос
         </span>
         <span>${data[0].appearance['hair-color']}</span>
     </li>
