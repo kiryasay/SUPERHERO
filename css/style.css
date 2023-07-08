@@ -66,27 +66,27 @@ body {
 /* фоны */
 .cards_block .card-marvel-bg:hover{
     outline: #B61717 solid 3px;
-    background: url('../img/marvel_bg.png') center center/cover no-repeat;
+    background: url('../img/marvel_bg_downscaled.png') center center/cover no-repeat;
 }
 
 .cards_block .card-dc-bg:hover{
     outline: #0376f2 solid 3px;
-    background: url('../img/dc_bg.png') center center/cover no-repeat;
+    background: url('../img/dc_bg_downscaled.png') center center/cover no-repeat;
 }
 
 .cards_block .card-sw-bg:hover{
     outline: #ffe81f solid 3px;
-    background: url('../img/sw_bg.png') center center/cover no-repeat;
+    background: url('../img/sw_bg_downscaled.png') center center/cover no-repeat;
 }
 
 .cards_block .card-tmnt-bg:hover{
     outline: #aaca4e solid 3px;
-    background: url('../img/tmnt_bg.png') center center/cover no-repeat;
+    background: url('../img/tmnt_bg_downscaled.png') center center/cover no-repeat;
 }
 
 .cards_block .card-anime-bg:hover{
-    outline: #b4badf solid 3px;
-    background: url('../img/anime_bg-colored.png') center center/cover no-repeat;
+    outline: #971ded solid 3px;
+    background: url('../img/anime_bg_downscaled.png') center center/cover no-repeat;
 }
 
 /* логотипы */
@@ -108,8 +108,6 @@ body {
 
 .cards_block .card-anime-bg:hover .card_img{
     background: url('../img/anime_logo.png') center center/cover no-repeat;
-    width: 170px;
-    height: 118px;
 }
 
 
@@ -136,12 +134,8 @@ body {
 }
 
 .cards_block .card-anime-bg .card_img{
-    /* width: 199px;
-    height: 152px; */
-    width: 188px;
-    height: 42px;
-    /* max-width: 199px;
-    max-height: 52px; */
+    width: 169px;
+    height: 66px;
 }
 
 .cards_block .card .card-marvel-logo{
@@ -161,6 +155,7 @@ body {
 }
 
 .cards_block .card .card-anime-logo{
+    margin-top: 23px;
     background: url('../img/anime_black-logo.png') center center/cover no-repeat;
 }
 
