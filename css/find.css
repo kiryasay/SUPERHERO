@@ -20,10 +20,11 @@ section
     /* padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color:var(--white-color);
-    font-size: 1.7rem; */
+    color:var(--white-color); */
+    font-size: 1.7rem; 
     min-height: 100vh;
-    /* line-height: 1.6;
+    line-height: 1.6;
+    /* 
     display: flex;
     align-items: center;
     justify-content: stretch; */
