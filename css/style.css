@@ -1,6 +1,10 @@
-
 body {
     overflow-y: hidden;
+}
+
+section
+{
+    min-height: 100vh;
 }
 
 .welcome-text {
