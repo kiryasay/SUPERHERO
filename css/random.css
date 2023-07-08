@@ -22,4 +22,6 @@ section
 .random-button{
     height: 70px;
     width: 70px;
+    background: transparent;
+    border: none;
 }

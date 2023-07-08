@@ -3,6 +3,7 @@
           let videos = ['M7lc1UVf-VE', '93FxRxAUjU0', 'pxcDVmYctx8','5bAUcokZrKY'];
           tag.src = "https://www.youtube.com/iframe_api";
           var firstScriptTag = document.getElementsByTagName('script')[0];
+          const button = document.querySelector('random-button')
           firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
     
           // 3. This function creates an <iframe> (and YouTube player)
@@ -39,3 +40,17 @@
           function stopVideo() {
             player.stopVideo();
           }
+          function nextVideo(){
+            var rand = Math.floor(Math.random() * videos.length);
+            video = new YT.Player('player', {
+                height: '360',
+                width: '640',
+                videoId: videos[rand],
+                events: {
+                  'onReady': onPlayerReady,
+                  'onStateChange': onPlayerStateChange
+                }
+              });
+          }
+          button.addEventListener('click', nextVideo);
+          
