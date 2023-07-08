@@ -8,7 +8,6 @@
     --grey-color: #505050;
     --trans-color:transparent;
     --icons-color: #B6B6B6;
-
 }
 body{
     overflow-y: hidden;
@@ -18,16 +17,16 @@ html{
 }
 section
 {
-    padding: 0;
+    /* padding: 0;
     margin: 0;
     box-sizing: border-box;
     color:var(--white-color);
-    font-size: 1.7rem;
+    font-size: 1.7rem; */
     min-height: 100vh;
-    line-height: 1.6;
+    /* line-height: 1.6;
     display: flex;
     align-items: center;
-    justify-content: stretch;
+    justify-content: stretch; */
 }
 button, input{
     font-family: inherit;
