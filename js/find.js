@@ -96,42 +96,54 @@ const showSuperheroDetails = (data) => {
 	document.querySelector('.powerstats').innerHTML = `
 	<li>
 		<div>
-			<i class = "fa-solid fa-brain"></i>
+			<div class="stats_icon">
+				<i class="fa-solid fa-brain"></i>
+			</div>
 			<span>Интеллект</span>
 		</div>
 		<span>${data[0].powerstats.intelligence}</span>
 	</li>
 	<li>
 		<div>
-			<i class="fa-solid fa-dumbbell"></i>
+			<div class="stats_icon">
+				<i class="fa-solid fa-dumbbell"></i>
+			</div>
 			<span>Сила</span>
 		</div>
 		<span>${data[0].powerstats.strength}</span>
 	</li>
 	<li>
 		<div>
-			<i class = "fa-solid fa-person-running"></i>
+			<div class="stats_icon">
+				<i class = "fa-solid fa-person-running"></i>
+			</div>
 			<span>Скорость</span>
 		</div>
 		<span>${data[0].powerstats.speed}</span>
 	</li>
 	<li>
 		<div>
-			<i class = "fa-solid fa-shield"></i>
+			<div class="stats_icon">
+				<i class = "fa-solid fa-shield"></i>
+			</div>
 			<span>Стойкость</span>
 		</div>
 		<span>${data[0].powerstats.durability}</span>
 	</li>
 	<li>
 		<div>
-			<i class = "fa-solid fa-fire"></i>
+			<div class="stats_icon">
+				<i class = "fa-solid fa-fire"></i>
+			</div>
 			<span>Энергия</span>
 		</div>
 		<span>${data[0].powerstats.power}</span>
 	</li>
 	<li>
 		<div>
-			<i class = "fa-solid fa-hand-fist"></i>
+			<div class="stats_icon">
+				<i class = "fa-solid fa-hand-fist"></i>
+			</div>
 			<span>Сражение</span>
 		</div>
 		<span>${data[0].powerstats.combat}</span>

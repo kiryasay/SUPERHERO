@@ -78,8 +78,6 @@ img{
     width: 100%;
     max-height: 400px;
     overflow-y: scroll;
-
-
 }
 .search-list::-webkit-scrollbar{
     width: 7px;
@@ -120,10 +118,10 @@ img{
 .app-body::-webkit-scrollbar{
     width: 7px;
 }
-.app-body::-webkit-scrollbar-track{
+/* .app-body::-webkit-scrollbar-track{
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
             box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
+} */
 .app-body::-webkit-scrollbar-thumb{
     background-color: var(--red-color);
     border-radius: 5px;
@@ -142,8 +140,8 @@ img{
             justify-content: space-between;
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
     border-radius: 2px;
-    padding-bottom: 1.6rem;
-    margin: 27px 0 0;
+    padding-bottom: 7px;
+    margin: 20px 0 0;
 }
 .tab-head-single{
     position: relative;
@@ -161,11 +159,11 @@ img{
     content: "";
     position: absolute;
     left: 0;
-    bottom: -1.7rem;
+    bottom: -10px;
     /*  */
     width: 100%;
     height: 4px;
-    background-color: var(--yellow-color);
+    background-color: #E42759;
 }
 
 /* app body content */
@@ -203,24 +201,30 @@ img{
 display: none;
 }
 .powerstats li{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     margin: 21px auto;
     padding: 11px 14px 6px 15px;
     background-color: #06050D;
 }
+.powerstats li div .stats_icon{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 25px;
+    min-height: 23px;
+}
 .powerstats li div i{
     color: var(--red-color);
+    /* min-width: 25px;
+    min-height: 23px; */
+    /* margin-right: -44px; */
 }
 .powerstats li div span{
     text-transform: uppercase;
     border-radius: 7px;
     padding: 0 1.2rem;
-    margin: 0 1.6rem;
+    margin: 0 -16px;
     font-size: 24px;
     font-weight: 700;
     color: var(--milk-color);
