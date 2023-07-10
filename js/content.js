@@ -1,6 +1,6 @@
 const API_KEY = "58800a88-49e6-4bce-acef-dd16c8f63c4e";
 const API_URL_POPULAR =
-  "https://kinopoiskapiunofficial.tech/api/v2.2/films/top?type=TOP_100_POPULAR_FILMS&page=1";
+  "https://kinopoiskapiunofficial.tech/api/v2.2/films?genres=6&order=RATING&type=ALL&ratingFrom=5&ratingTo=10&yearFrom=1000&yearTo=3000&page=5";
 const API_URL_SEARCH =
   "https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword?keyword=";
 const API_URL_MOVIE_DETAILS = "https://kinopoiskapiunofficial.tech/api/v2.2/films/"
@@ -28,13 +28,14 @@ function getClassByRate(vote) {
   }
 }
 
+
 function showMovies(data) {
   const moviesEl = document.querySelector(".movies");
 
   // Очищаем предыдущие фильмы
   document.querySelector(".movies").innerHTML = "";
 
-  data.films.forEach((movie) => {
+  data.items.forEach((movie) => {
     const movieEl = document.createElement("div");
     movieEl.classList.add("movie");
     movieEl.innerHTML = `
@@ -47,21 +48,21 @@ function showMovies(data) {
         <div class="movie__cover--darkened"></div>
       </div>
       <div class="movie__info">
-        <div class="movie__title">${movie.nameRu}</div>
+        <div class="movie__title">${(movie.nameRu != null)?movie.nameRu: movie.nameOriginal}</div>
         <div class="movie__category">${movie.genres.map(
           (genre) => ` ${genre.genre}`
         )}</div>
         ${
-          movie.rating &&
+          movie.ratingKinopoisk &&
           `
         <div class="movie__average movie__average--${getClassByRate(
-          movie.rating
-        )}">${movie.rating}</div>
+          movie.ratingKinopoisk
+        )}">${movie.ratingKinopoisk}</div>
         `
         }
       </div>
         `;
-    movieEl.addEventListener("click", () => openModal(movie.filmId))
+    movieEl.addEventListener("click", () => openModal(movie.kinopoiskId))
     moviesEl.appendChild(movieEl);
   });
 }
