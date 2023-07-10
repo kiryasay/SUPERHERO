@@ -172,27 +172,27 @@ const showSuperheroDetails = (data) => {
 
 	document.querySelector('.biography').innerHTML = `
 	<li>
-		<span>Полное имя</span>
+		<span>Полное имя:</span>
 		<span>${data[0].biography['full-name']}</span>
 	</li>
 	<li>
-		<span>Альтер-эго</span>
+		<span>Альтер-эго:</span>
 		<span>${data[0].biography['alter-egos']}</span>
 	</li>
 	<li>
-		<span>Псевдонимы</span>
+		<span>Псевдонимы:</span>
 		<span>${data[0].biography['aliases']}</span>
 	</li>
 	<li>
-		<span>Место рождения</span>
+		<span>Место рождения:</span>
 		<span>${data[0].biography['place-of-birth']}</span>
 	</li>
 	<li>
-		<span>Первое появление</span>
+		<span>Первое появление:</span>
 		<span>${data[0].biography['first-appearance']}</span>
 	</li>
 	<li>
-		<span>Издатель</span>
+		<span>Издатель:</span>
 		<span>${data[0].biography['publisher']}</span>
 	</li>
 	`;
@@ -200,37 +200,55 @@ const showSuperheroDetails = (data) => {
 	document.querySelector('.appearance').innerHTML = `
 	<li>
 		<span>
-			<i class = "fa-solid fa-venus-mars"></i> Пол
+			<div class="appearance_icon">
+				<i class="fa-solid fa-venus-mars"></i> 
+			</div> 
+			Пол
 		</span>
 		<span>${data[0].appearance['gender']}</span>
 	</li>
 	<li>
 		<span>
-			<i class = "fa-solid fa-person"></i> Раса
+			<div class="appearance_icon">
+				<i class="fa-solid fa-person"></i> 
+			</div>
+			Раса
 		</span>
 		<span>${data[0].appearance['race']}</span>
 	</li>
 	<li>
 		<span>
-			<i class = "fa-solid fa-arrows-up-down"></i> Рост
+			<div class="appearance_icon">
+				<i class="fa-solid fa-arrows-up-down"></i> 
+			</div>
+			Рост
 		</span>
 		<span>${data[0].appearance['height'][1]}</span>
 	</li>
 	<li>
 		<span>
-			<i class = "fa-solid fa-weight-hanging"></i> Вес
+			<div class="appearance_icon">
+				<i class="fa-solid fa-weight-hanging"></i> 
+			</div>
+			Вес
 		</span>
 		<span>${data[0].appearance['weight'][1]}</span>
 	</li>
 	<li>
 		<span>
-			<i class = "fa-solid fa-eye"></i> Цвет глаз
+			<div class="appearance_icon">
+				<i class="fa-solid fa-eye"></i> 
+			</div>
+			Цвет глаз
 		</span>
 		<span>${data[0].appearance['eye-color']}</span>
 	</li>
 	<li>
 		<span>
-			<i class = "fa-solid fa-droplet"></i> Цвет волос
+			<div class="appearance_icon">
+				<i class="fa-solid fa-droplet"></i> 
+			</div>
+			Цвет волос
 		</span>
 		<span>${data[0].appearance['hair-color']}</span>
 	</li>

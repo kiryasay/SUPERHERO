@@ -189,7 +189,7 @@ img{
     font-weight: 900;
 }
 .app-body-tabs-body{
-    margin-top: 41px;
+    /* margin-top: 41px; */
 }
 
 .app-body-tabs-body ul{
@@ -252,28 +252,38 @@ display: none;
     background: rgba(0, 0, 0, 0.60);
 }
 .biography li{
-    margin: 3.4rem 0;
+    margin: 12px 0;
+    padding: 14px 14px;
 }
-.biography li span{
-    text-transform: capitalize;
-    font-weight: 600;
-    font-size: 1.9rem;
-}
+
 .biography li span:first-child{
-    font-weight: 600;
-    color: var(--grey-color);
-    margin-right: 1rem;
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--milk-color);
+    margin-right: 14px;
 }
 .biography li span:last-child{
-    font-weight: 300;
+    color: var(--milk-color);
+    font-size: 22px;
+    font-weight: 400;
 }
 
 /* appearance */
 .appearance{
     display: none;
 }
+
+.appearance li span .appearance_icon{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 24px;
+    min-height: 22px;
+    margin-right: 14px;
+}
+
 .appearance li{
-    margin: 3.2rem 0;
+    margin: 40px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -286,13 +296,10 @@ display: none;
 }
 .appearance li span:first-child i{
     color: var(--yellow-color);
-    margin-right: 1.4rem;
 }
 .appearance li span:first-child{
-    text-transform: capitalize;
-    font-weight: 600;
+    font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 2px;
     margin-right: 4rem;
 }
 .appearance li span:last-child{
