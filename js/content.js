@@ -67,7 +67,7 @@ function showMovies(data) {
 }
 
 const form = document.querySelector("form");
-const search = document.querySelector(".header__search");
+const search = document.querySelector(".form-control");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
