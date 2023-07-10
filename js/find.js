@@ -1,7 +1,7 @@
-const allTabsBody = document.querySelectorAll('.tab-body-single');
-const allTabsHead = document.querySelectorAll('.tab-head-single');
-const searchForm = document.querySelector('.app-header-search');
-let searchList = document.getElementById('search-list');
+const allTabsBody = document.querySelectorAll('.tab-body-single'); //powerstats biography appearance connections
+const allTabsHead = document.querySelectorAll('.tab-head-single'); //buttons for hero descr
+const searchForm = document.querySelector('.app-header-search'); //search hero
+let searchList = document.getElementById('search-list'); //search dropdown
 
 let activeTab = 1, allData;
 
@@ -10,18 +10,19 @@ const init = () => {
 	showActiveTabHead();
 };
 
-const showActiveTabHead = () => allTabsHead[activeTab - 1].classList.add('active-tab');
+const showActiveTabHead = () => allTabsHead[activeTab - 1].classList.add('active-tab'); //active button
 
 const showActiveTabBody = () => {
 	hideAllTabBody();
-	allTabsBody[activeTab - 1].classList.add('show-tab');
+	allTabsBody[activeTab - 1].classList.add('show-tab'); //active content
 };
 
 const hideAllTabBody = () => allTabsBody.forEach(singleTabBody => singleTabBody.classList.remove('show-tab'));
 const hideAllTabHead = () => allTabsHead.forEach(singleTabHead => singleTabHead.classList.remove('active-tab'));
 
-// even listeners
+// event listeners
 window.addEventListener('DOMContentLoaded', () => init());
+
 // button event listeners
 allTabsHead.forEach(singleTabHead => {
 	singleTabHead.addEventListener('click', () => {
@@ -41,7 +42,7 @@ const getInputValue = (event) => {
 // search form submission
 searchForm.addEventListener('submit', getInputValue);
 
-// api key => 727054372039115
+// api key => 106808315798405
 const fetchAllSuperHero = async (searchText) => {
 	let url = `https://www.superheroapi.com/api.php/106808315798405/search/${searchText}`;
 	try {
@@ -91,8 +92,8 @@ const showSuperheroDetails = (data) => {
 	document.querySelector('.app-body-content-thumbnail').innerHTML = `
 		<img src = "${data[0].image.url}">
 	`;
-
 	document.querySelector('.name').textContent = data[0].name;
+
 	document.querySelector('.powerstats').innerHTML = `
 	<li>
 		<div>
@@ -149,6 +150,25 @@ const showSuperheroDetails = (data) => {
 		<span>${data[0].powerstats.combat}</span>
 	</li>
 	`;
+
+	const powerStatsSelector = document.querySelectorAll('.powerstats li > span');
+	const dataLink = data[0].powerstats;
+	let count = 0;
+	for (let item in dataLink) {
+		if (dataLink[item] === 'null') {
+			powerStatsSelector[count++].innerHTML = '<span>Неизвестно</span>';
+			continue;
+		}
+		if (dataLink[item] >= 0 && dataLink[item] < 25) {
+			powerStatsSelector[count++].classList.add('bad');
+		} else if (dataLink[item] >= 25 && dataLink[item] < 50) {
+			powerStatsSelector[count++].classList.add('mid');
+		} else if (dataLink[item] >= 50 && dataLink[item] < 75) {
+			powerStatsSelector[count++].classList.add('good');
+		} else if (dataLink[item] >= 75 && dataLink[item] <= 100) {
+			powerStatsSelector[count++].classList.add('nice');
+		}
+	}
 
 	document.querySelector('.biography').innerHTML = `
 	<li>

@@ -230,9 +230,21 @@ display: none;
     color: var(--milk-color);
 }
 .powerstats li > span{
-    color: var(--yellow-color);
+    color: var(--milk-color);
     margin: auto 0;
-    font-weight: 700;
+    font-weight: 900;
+}
+.powerstats li > span.bad {
+    color: #DA3B19;
+}
+.powerstats li > span.mid {
+    color: #E3B618;
+}
+.powerstats li > span.good {
+    color: #A9DA1C;
+}
+.powerstats li > span.nice {
+    color: #4EDF5C;
 }
 /* biography */
 .biography{
