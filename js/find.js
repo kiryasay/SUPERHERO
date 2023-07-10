@@ -90,7 +90,8 @@ searchList.addEventListener('click', (event) => {
 const showSuperheroDetails = (data) => {
 	console.log(data);
 	document.querySelector('.app-body-content-thumbnail').innerHTML = `
-		<img src = "${data[0].image.url}">
+		<div class="thumbnail_bg"></div>
+		<img src = "${data[0].image.url}" alt="" class= "thumbnail">
 	`;
 	document.querySelector('.name').textContent = data[0].name;
 
