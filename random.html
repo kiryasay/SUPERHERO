@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/random.css">
@@ -50,18 +53,20 @@
     </header>
     <section class="intro" id="intro">
         <div class="container">
-            <form >
-            <div class="search">
-                <input type="text" class="header__search" placeholder="Поиск">
+            <div class="app-header">
+                <form class="app-header-search">
+                    <input type="text" class="form-control" placeholder="Найди свой фильм...">
+                </form>
             </div>
-            </form>
-            <div class="movies"></div>
-            <div class="modal"></div>
-          </div>
-          <script src="js/app.js"></script>
-        </body>
-      </html>
+            <div class="main-wrapper">
+                <div class="app">
+                    <div class="movies"></div>
+                    <div class="modal"></div>
+                </div>
+            </div>
+        </div>
     </section>
     <script src="js/content.js"></script>
 </body>
+
 </html>
