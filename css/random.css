@@ -139,6 +139,9 @@ input{
   .movie__average--red {
     border: 1px solid red;
   }
+  .movie__average--white{
+    border: 1px solid white;
+  }
   
   .modal {
     display: none;
@@ -161,7 +164,7 @@ input{
   
   .modal__card {
     background-color: #ffffff;
-    max-width: 600px;
+    max-width: 900px;
     padding: 16px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
     background-color: #00001E;
