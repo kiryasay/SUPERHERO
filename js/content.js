@@ -55,7 +55,7 @@ function showMovies(data) {
           (genre) => ` ${genre.genre}`
         )}</div>
         ${
-          movie.ratingKinopoisk &&
+          (movie.ratingKinopoisk == "null")?0: movie.ratingKinopoisk &&
           `
         <div class="movie__average movie__average--${getClassByRate(
           movie.ratingKinopoisk
