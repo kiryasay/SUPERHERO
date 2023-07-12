@@ -93,7 +93,7 @@ img{
 .search-list-item{
     display: flex;
     align-items: center;
-    background-color: var(--blue-color);
+    background-color: #11111a;
     cursor: pointer;
 }
 .search-list-item:hover{
