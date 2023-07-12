@@ -2,6 +2,7 @@ const allTabsBody = document.querySelectorAll('.tab-body-single'); //powerstats 
 const allTabsHead = document.querySelectorAll('.tab-head-single'); //buttons for hero descr
 const searchForm = document.querySelector('.app-header-search'); //search hero
 let searchList = document.getElementById('search-list'); //search dropdown
+const modal = document.querySelector('#modal');
 
 let activeTab = 1, allData;
 
@@ -79,6 +80,7 @@ searchForm.search.addEventListener('keyup', () => {
 });
 
 searchList.addEventListener('click', (event) => {
+	modal.show();
 	let searchId = event.target.dataset.id;
 	let singleData = allData.results.filter(singleData => {
 		return searchId === singleData.id;

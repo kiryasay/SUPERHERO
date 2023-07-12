@@ -91,12 +91,8 @@ img{
     border-radius: 5px;
 }
 .search-list-item{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     background-color: var(--blue-color);
     padding: 0.4rem 0;
 }
@@ -107,6 +103,33 @@ img{
 .search-list-item p{
     font-weight: 700;
     cursor: pointer;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
 }
 
 /* app body */
@@ -143,6 +166,11 @@ img{
     padding-bottom: 7px;
     margin: 20px 0 0;
 }
+
+.modal[open] {
+    
+}
+
 .tab-head-single{
     position: relative;
     font-weight: 900;
