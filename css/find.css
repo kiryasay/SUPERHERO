@@ -134,9 +134,13 @@ img{
 
 /* app body */
 .app-body{
+    border: 0;
     margin-top: 27px;
-    height: 600px;
     overflow-y: scroll;
+    padding: 3px;
+    background: transparent;
+    max-height: 600px;
+    max-width: 1130px;
 }
 .app-body::-webkit-scrollbar{
     width: 7px;
@@ -247,6 +251,7 @@ img{
     text-transform: uppercase;
     font-size: 36px;
     font-weight: 900;
+    color: var(--milk-color);
 }
 .app-body-tabs-body{
     /* margin-top: 41px; */
@@ -361,8 +366,10 @@ display: none;
     font-weight: 800;
     text-transform: uppercase;
     margin-right: 4rem;
+    color: var(--milk-color);
 }
 .appearance li span:last-child{
+    color: var(--milk-color);
     font-weight: 600;
     text-transform: capitalize;
     background-color: var(--red-color);
@@ -397,6 +404,7 @@ display: none;
     background-color: var(--yellow-color);
 }
 .connections li span:last-child{
+    color: var(--milk-color);
     letter-spacing: 1px;
     line-height: 1.9;
 }

@@ -80,7 +80,6 @@ searchForm.search.addEventListener('keyup', () => {
 });
 
 searchList.addEventListener('click', (event) => {
-	modal.show();
 	let searchId = event.target.dataset.id;
 	let singleData = allData.results.filter(singleData => {
 		return searchId === singleData.id;
@@ -91,8 +90,8 @@ searchList.addEventListener('click', (event) => {
 
 const showSuperheroDetails = (data) => {
 	console.log(data);
+	// <div class="thumbnail_bg"></div>
 	document.querySelector('.app-body-content-thumbnail').innerHTML = `
-		<div class="thumbnail_bg"></div>
 		<img src = "${data[0].image.url}" alt="" class= "thumbnail">
 	`;
 	document.querySelector('.name').textContent = data[0].name;
@@ -267,4 +266,5 @@ const showSuperheroDetails = (data) => {
 		<span>${data[0].connections['relatives']}</span>
 	</li>
 	`;
+	modal.show();
 };
