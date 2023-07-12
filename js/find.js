@@ -89,6 +89,7 @@ searchList.addEventListener('click', (event) => {
 });
 
 const showSuperheroDetails = (data) => {
+	modal.close();
 	console.log(data);
 	// <div class="thumbnail_bg"></div>
 	document.querySelector('.app-body-content-thumbnail').innerHTML = `
