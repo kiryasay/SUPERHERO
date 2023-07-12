@@ -73,9 +73,6 @@ const showSearchList = (data) => {
 	});
 };
 
-let searchListItem = document.getElementById('search-list-item'); //search dropdown
-console.log(searchListItem);
-
 searchForm.search.addEventListener('keyup', () => {
 	if (searchForm.search.value.length > 1) {
 		fetchAllSuperHero(searchForm.search.value);
