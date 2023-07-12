@@ -64,14 +64,17 @@ const showSearchList = (data) => {
 		const divElem = document.createElement('div');
 		divElem.classList.add('search-list-item');
 		divElem.innerHTML = `
-			<img src = "${dataItem.image.url ? dataItem.image.url : ''}" alt = "">
-			<p data-id = "${dataItem.id}">${dataItem.name}</p>
+				<div data-id = "${dataItem.id}" class = "searchListItem-wrapper">
+					<img data-id = "${dataItem.id}" src = "${dataItem.image.url ? dataItem.image.url : ''}" alt = "">
+					<p data-id = "${dataItem.id}">${dataItem.name}</p>
+				</div>
 		`;
 		searchList.appendChild(divElem);
 	});
 };
 
-// let searchListItem = document.getElementById('search-list-item'); //search dropdown
+let searchListItem = document.getElementById('search-list-item'); //search dropdown
+console.log(searchListItem);
 
 searchForm.search.addEventListener('keyup', () => {
 	if (searchForm.search.value.length > 1) {
@@ -91,7 +94,6 @@ searchList.addEventListener('click', (event) => {
 });
 
 const showSuperheroDetails = (data) => {
-	modal.close();
 	console.log(data);
 	// <div class="thumbnail_bg"></div>
 	document.querySelector('.app-body-content-thumbnail').innerHTML = `

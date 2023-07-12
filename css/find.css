@@ -94,16 +94,28 @@ img{
     display: flex;
     align-items: center;
     background-color: var(--blue-color);
+    cursor: pointer;
+}
+.search-list-item:hover{
+    background-color: #1c2c57;
+}
+.search-list-item .searchListItem-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
     padding: 10px 11px;
 }
 .search-list-item img{
-    width: 50px;
-    margin-right: 2rem;
+    width: 54px;
+    margin-right: 17px;
 }
-.search-list-item p{
+.search-list-item .searchListItem-wrapper p{
+    font-size: 22px;
     font-weight: 400;
-    cursor: pointer;
     margin-top: 16px;
+    /* :hover{
+        background-color: none;
+    } */
 }
 
 @keyframes fade-in {
