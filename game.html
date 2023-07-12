@@ -8,12 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="css/random.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/game.css">
     <script src="js/three.r134.min.js"></script>
     <script src="js/vanta.net.min.js"></script>
     <script src="js/script.js" defer> </script>
@@ -52,21 +50,14 @@
         </div>
     </header>
     <section class="intro" id="intro">
-        <div class="container">
-            <div class="app-header">
-                <form class="app-header-search">
-                    <input type="text" class="form-control" placeholder="Найди свой фильм...">
-                </form>
-            </div>
-            <div class="main-wrapper">
-                <div class="app">
-                    <div class="movies"></div>
-                    <div class="modal"></div>
-                </div>
+        <div class="game-block">
+            <div class="game">
+                <div id="hero"></div>
+                <div class="build" id=build></div>
             </div>
         </div>
     </section>
-    <script src="js/content.js"></script>
+    <script src="js/game.js"></script>
 </body>
 
 </html>
