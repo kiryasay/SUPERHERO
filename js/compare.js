@@ -1,6 +1,8 @@
 const allTabsBody = document.querySelectorAll('.tab-body-single'); //powerstats
 const searchFormLeft = document.querySelector('.app-header-search-left'); //search hero left
-let searchList = document.getElementById('search-list'); //search dropdown
+const searchFormRight = document.querySelector('.app-header-search-right'); //search hero left
+let searchListLeft = document.getElementById('search-list-left'); //search dropdown
+let searchListRight = document.getElementById('search-list-right'); //search dropdown
 const modal = document.querySelector('#modal');
 
 let activeTab = 1, allData;
@@ -20,36 +22,61 @@ const hideAllTabBody = () => allTabsBody.forEach(singleTabBody => singleTabBody.
 // event listeners
 window.addEventListener('DOMContentLoaded', () => init());
 
-const getInputValue = (event) => {
+const getInputValueLeft = (event) => {
 	event.preventDefault();
 	let searchText = searchFormLeft.search.value;
-	fetchAllSuperHero(searchText);
+	fetchAllSuperHeroLeft(searchText);
+};
+
+const getInputValueRight = (event) => {
+	event.preventDefault();
+	let searchText = searchFormRight.search.value;
+	fetchAllSuperHeroRight(searchText);
 };
 
 // search form submission
-searchFormLeft.addEventListener('submit', getInputValue);
+searchFormLeft.addEventListener('submit', getInputValueLeft);
+searchFormRight.addEventListener('submit', getInputValueRight);
 
 // api key => 106808315798405
-const fetchAllSuperHero = async (searchText) => {
+const fetchAllSuperHeroLeft = async (searchText) => {
 	let url = `https://www.superheroapi.com/api.php/106808315798405/search/${searchText}`;
 	try {
 		const response = await fetch(url);
 		allData = await response.json();
 		if (allData.response === 'success') {
-			console.log('allData from fetchAllSuperHero:');
+			console.log('allData from fetchAllSuperHeroLeft:');
 			console.log(allData);
-			showSearchList(allData.results);
+			showSearchListLeft(allData.results);
 		}
 		else {
-			showSearchList(undefined);
+			showSearchListLeft(undefined);
 		}
 	} catch (error) {
 		console.log(error);
 	}
 };
 
-const showSearchList = (data) => {
-	searchList.innerHTML = '';
+const fetchAllSuperHeroRight = async (searchText) => {
+	let url = `https://www.superheroapi.com/api.php/106808315798405/search/${searchText}`;
+	try {
+		const response = await fetch(url);
+		allData = await response.json();
+		if (allData.response === 'success') {
+			console.log('allData from fetchAllSuperHeroRight:');
+			console.log(allData);
+			showSearchListRight(allData.results);
+		}
+		else {
+			showSearchListRight(undefined);
+		}
+	} catch (error) {
+		console.log(error);
+	}
+};
+
+const showSearchListLeft = (data) => {
+	searchListLeft.innerHTML = '';
 	data.forEach(dataItem => {
 		const divElem = document.createElement('div');
 		divElem.classList.add('search-list-item');
@@ -59,19 +86,42 @@ const showSearchList = (data) => {
 					<p data-id = "${dataItem.id}">${dataItem.name}</p>
 				</div>
 		`;
-		searchList.appendChild(divElem);
+		searchListLeft.appendChild(divElem);
+	});
+};
+
+const showSearchListRight = (data) => {
+	searchListRight.innerHTML = '';
+	data.forEach(dataItem => {
+		const divElem = document.createElement('div');
+		divElem.classList.add('search-list-item');
+		divElem.innerHTML = `
+				<div data-id = "${dataItem.id}" class = "searchListItem-wrapper">
+					<img data-id = "${dataItem.id}" src = "${dataItem.image.url ? dataItem.image.url : ''}" alt = "">
+					<p data-id = "${dataItem.id}">${dataItem.name}</p>
+				</div>
+		`;
+		searchListRight.appendChild(divElem);
 	});
 };
 
 searchFormLeft.search.addEventListener('keyup', () => {
 	if (searchFormLeft.search.value.length > 1) {
-		fetchAllSuperHero(searchFormLeft.search.value);
+		fetchAllSuperHeroLeft(searchFormLeft.search.value);
 	} else {
-		searchList.innerHTML = '';
+		searchListLeft.innerHTML = '';
 	}
 });
 
-searchList.addEventListener('click', (event) => {
+searchFormRight.search.addEventListener('keyup', () => {
+	if (searchFormRight.search.value.length > 1) {
+		fetchAllSuperHeroRight(searchFormRight.search.value);
+	} else {
+		searchListRight.innerHTML = '';
+	}
+});
+
+searchListLeft.addEventListener('click', (event) => {
 	let searchId = event.target.dataset.id;
 	console.log(allData);
 	let singleData = allData.results.filter(singleData => {
@@ -80,16 +130,27 @@ searchList.addEventListener('click', (event) => {
 		return searchId === singleData.id;
 	});
 	showSuperheroDetails(singleData);
-	searchList.innerHTML = '';
+	searchListLeft.innerHTML = '';
+});
+
+searchListRight.addEventListener('click', (event) => {
+	let searchId = event.target.dataset.id;
+	console.log(allData);
+	let singleData = allData.results.filter(singleData => {
+		console.log('searchId: ' + searchId);
+		console.log('singleData.id: ' + singleData.id);
+		return searchId === singleData.id;
+	});
+	showSuperheroDetails(singleData);
+	searchListRight.innerHTML = '';
 });
 
 const showSuperheroDetails = (data) => {
 	console.log(data);
-	document.querySelector('.app-body-content-thumbnail').innerHTML = `
-		<img src = "${data[0].image.url}" alt="" class= "thumbnail">
-		<div class="name">${data[0].name}</div>
+	document.querySelector('.app-body-content-thumbnail-left').innerHTML = `
+		<img src ="${data[0].image.url}" alt="" class="thumbnail-left">
+		<div class="name-left">${data[0].name}</div>
 	`;
-	document.querySelector('.name').textContent = data[0].name;
 
 	document.querySelector('.powerstats').innerHTML = `
 	<li>
