@@ -21,7 +21,7 @@ function jump() {
 }
 
 
-
+/* 
 function createBuild(){
     let object = document.createElement('div');
     object.setAttribute("class", "build", "id", "build");
@@ -35,13 +35,14 @@ function createBuild(){
     node.appendChild(object);
     node.removeChild(object);
 }
-setInterval(createBuild, 1000);
+setInterval(createBuild, 1000); */
 
 let isAlive = setInterval(function(){
     let heroTop = parseInt(window.getComputedStyle(hero).getPropertyValue("top"));
     let buildleft = parseInt(window.getComputedStyle(build).getPropertyValue("left"));
-    if(buildleft < 18 && buildleft > 0 && heroTop >= 260 )
+    if(buildleft < 20 && buildleft > 0 && heroTop >= 260 )
     {
         alert("wefewfwe");
     }
+    
 }, 10)
