@@ -91,7 +91,7 @@ searchList.addEventListener('click', (event) => {
 	let singleData = allData.results.filter(singleData => {
 		console.log('searchId: ' + searchId);
 		console.log('singleData.id: ' + singleData.id);
-		return searchId === singleData.id; //twoStrings(searchId, singleData.id)
+		return searchId === singleData.id;
 	});
 	showSuperheroDetails(singleData);
 	searchList.innerHTML = '';
