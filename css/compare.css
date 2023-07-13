@@ -18,6 +18,7 @@ section
     min-height: 100vh;
 }
 button, input{
+    color: var(--milk-color);
     font-size: 20px;
     outline: 0;
     border: none;
@@ -46,18 +47,18 @@ img{
     justify-content: space-around;
     gap: 100px;
 }
-.app-header-search{
+.app-header-search, .app-header-search-left{
     border: 2px solid var(--grey-color);
     border-radius: 45px;
     padding: 12px 24px;
     position: relative;
     top: 15px;
 }
-.app-header-search .form-control{
+.app-header-search .form-control, .app-header-search-left .form-control{
     width: 146px;
     color: #fff;
 }
-.app-header-search .search-btn{
+.app-header-search .search-btn, .app-header-search-left .search-btn{
     color: white;
     font-size: 2.3rem;
     cursor: pointer;

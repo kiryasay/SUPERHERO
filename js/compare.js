@@ -1,6 +1,6 @@
-const allTabsBody = document.querySelectorAll('.tab-body-single'); //powerstats biography appearance connections
-const allTabsHead = document.querySelectorAll('.tab-head-single'); //buttons for hero descr
-const searchForm = document.querySelector('.app-header-search'); //search hero
+const allTabsBody = document.querySelectorAll('.tab-body-single'); //powerstats
+const searchFormLeft = document.querySelector('.app-header-search-left'); //search hero left
+console.log(searchFormLeft);
 let searchList = document.getElementById('search-list'); //search dropdown
 const modal = document.querySelector('#modal');
 
@@ -17,28 +17,18 @@ const showActiveTabBody = () => {
 };
 
 const hideAllTabBody = () => allTabsBody.forEach(singleTabBody => singleTabBody.classList.remove('show-tab'));
-const hideAllTabHead = () => allTabsHead.forEach(singleTabHead => singleTabHead.classList.remove('active-tab'));
 
 // event listeners
 window.addEventListener('DOMContentLoaded', () => init());
 
-// button event listeners
-allTabsHead.forEach(singleTabHead => {
-	singleTabHead.addEventListener('click', () => {
-		hideAllTabHead();
-		activeTab = singleTabHead.dataset.id;
-		showActiveTabBody();
-	});
-});
-
 const getInputValue = (event) => {
 	event.preventDefault();
-	let searchText = searchForm.search.value;
+	let searchText = searchFormLeft.search.value;
 	fetchAllSuperHero(searchText);
 };
 
 // search form submission
-searchForm.addEventListener('submit', getInputValue);
+searchFormLeft.addEventListener('submit', getInputValue);
 
 // api key => 106808315798405
 const fetchAllSuperHero = async (searchText) => {
@@ -74,9 +64,9 @@ const showSearchList = (data) => {
 	});
 };
 
-searchForm.search.addEventListener('keyup', () => {
-	if (searchForm.search.value.length > 1) {
-		fetchAllSuperHero(searchForm.search.value);
+searchFormLeft.search.addEventListener('keyup', () => {
+	if (searchFormLeft.search.value.length > 1) {
+		fetchAllSuperHero(searchFormLeft.search.value);
 	} else {
 		searchList.innerHTML = '';
 	}
@@ -107,7 +97,6 @@ const showSuperheroDetails = (data) => {
 			<div class="stats_icon">
 				<i class="fa-solid fa-brain"></i>
 			</div>
-			<span>Интеллект</span>
 		</div>
 		<span>${data[0].powerstats.intelligence}</span>
 	</li>
@@ -116,7 +105,6 @@ const showSuperheroDetails = (data) => {
 			<div class="stats_icon">
 				<i class="fa-solid fa-dumbbell"></i>
 			</div>
-			<span>Сила</span>
 		</div>
 		<span>${data[0].powerstats.strength}</span>
 	</li>
@@ -125,7 +113,6 @@ const showSuperheroDetails = (data) => {
 			<div class="stats_icon">
 				<i class = "fa-solid fa-person-running"></i>
 			</div>
-			<span>Скорость</span>
 		</div>
 		<span>${data[0].powerstats.speed}</span>
 	</li>
@@ -134,7 +121,6 @@ const showSuperheroDetails = (data) => {
 			<div class="stats_icon">
 				<i class = "fa-solid fa-shield"></i>
 			</div>
-			<span>Стойкость</span>
 		</div>
 		<span>${data[0].powerstats.durability}</span>
 	</li>
@@ -143,7 +129,6 @@ const showSuperheroDetails = (data) => {
 			<div class="stats_icon">
 				<i class = "fa-solid fa-fire"></i>
 			</div>
-			<span>Энергия</span>
 		</div>
 		<span>${data[0].powerstats.power}</span>
 	</li>
@@ -152,7 +137,6 @@ const showSuperheroDetails = (data) => {
 			<div class="stats_icon">
 				<i class = "fa-solid fa-hand-fist"></i>
 			</div>
-			<span>Сражение</span>
 		</div>
 		<span>${data[0].powerstats.combat}</span>
 	</li>
