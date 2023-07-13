@@ -44,15 +44,17 @@ img{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap: 100px;
 }
 .app-header-search{
     border: 2px solid var(--grey-color);
     border-radius: 45px;
     padding: 12px 24px;
     position: relative;
+    top: 15px;
 }
 .app-header-search .form-control{
-    min-width: 420px;
+    width: 146px;
     color: #fff;
 }
 .app-header-search .search-btn{
@@ -139,27 +141,38 @@ img{
     animation: fade-in 500ms forwards;
 }
 
-.app-body-content{
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    -webkit-column-gap: 4rem;
-       -moz-column-gap: 4rem;
-            column-gap: 4rem;
-    margin-right: 2rem;
+.app-body-content-list{
+    width: 210px;
+    height: 500px;
 }
+
+.app-body-content{
+    /* display: grid;
+    grid-template-columns: 2fr 3fr;
+    column-gap: 4rem;
+    margin-right: 2rem; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab-body-single{
+    padding: 0px;
+}
+
 .app-body-content-thumbnail{
-    margin: 20px 5px 0px 20px;
-    width: 440px;
-    height: 570px;
-    border-radius: 10px;
-    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .app-body-content-thumbnail .thumbnail{
-    position: relative;
-    z-index: 1;
+    width: 336px;
+    height: 450px;
+    border-radius: 28px;
+    overflow: hidden;
 }
-.app-body-content-list .name{
+
+.app-body-content-thumbnail .name{
     text-transform: uppercase;
     font-size: 36px;
     font-weight: 900;
@@ -171,6 +184,7 @@ img{
 display: none;
 }
 .powerstats li{
+    width: 160px;
     display: flex;
     justify-content: space-between;
     margin: 21px auto;
