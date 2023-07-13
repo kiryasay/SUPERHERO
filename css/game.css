@@ -2,12 +2,15 @@ body{
     overflow-y: hidden;
 }
 .game-block{
-    padding-top: 100px;
+    padding-top: 50px;
 }
 .game{
-   width: 900px;
-   height: 500px;
-   border-bottom: 10px solid black;
+   width: 700px;
+   height: 400px;
+   background-image: url("/img/city.jpg");
+   background-size: 700px 400px;
+   border: 2px solid #E42759;
+   box-shadow:0px 0px 200px #E42759;
    margin: auto; 
 }
 #hero{
@@ -16,26 +19,57 @@ body{
     background-image: url('/img/SPIDERMAN.png');
     background-size: 100px 100px;
     position: relative;
-    top:440px;
+    top:260px;
+    left:30px;
 
 
 }
 #build{
-    width:20px;
-    height: 40px;
-    background-image: url('/img/cactus.png');
-    background-size: 20px 40px;
+    width:50px;
+    height: 75px;
+    background-image: url('/img/sign.png');
+    background-size: 50px 75px;
     position: relative;
-    top: 400px;
-    left: 1500px;
-    animation: buildMove 0.8s infinite linear;
+    top: 170px;
+    animation: buildMove 1.5s infinite linear;
+    right: 0px;
 }
-@keyframes buildMove {
+#first-cloud{
+    width: 50px;
+    height: 50px;
+    background-image: url(/img/firstcloud.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 10px;
+    left: 650px;
+    animation: cloudMove 7s infinite linear;
+}
+#second-cloud{
+    width: 50px;
+    height: 50px;
+    background-image: url(/img/seconcloud.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: -150px;
+    left: 650px;
+    animation: cloudMove 10s infinite linear;
+
+}
+@keyframes cloudMove{
     0%{
-        left:880px;
+        left: 650px;
     }
     100%{
-        left: -20px;
+        left:-1px;
+    }
+}
+
+@keyframes buildMove {
+    0%{
+        left: 690px;
+    }
+    100%{
+        left: -18px;
     }
 }
 .jump{
@@ -43,18 +77,18 @@ body{
 }
 @keyframes jump {
     0%{
-        top: 440px;
+        top: 260px;
     }
     30%{
-        top: 350px;
+        top: 160px;
     }
     50%{
-        top: 300px;
+        top: 100px;
     }
     80%{
-        top: 350px;
+        top: 160px;
     }
     100%{
-        top: 440px;
+        top: 260px;
     }
 }
