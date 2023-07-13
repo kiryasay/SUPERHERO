@@ -75,7 +75,7 @@ img{
     top: calc(100% + 1rem);
     left: 0;
     /* background-color: var(--light-color); */
-    background: rgba(255, 255, 255, 0.5);
+    background: rgb(128, 128, 128);
     width: 100%;
     max-height: 300px;
     overflow-y: overlay;

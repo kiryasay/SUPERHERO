@@ -99,7 +99,6 @@ searchList.addEventListener('click', (event) => {
 
 const showSuperheroDetails = (data) => {
 	console.log(data);
-	// <div class="thumbnail_bg"></div>
 	document.querySelector('.app-body-content-thumbnail').innerHTML = `
 		<img src = "${data[0].image.url}" alt="" class= "thumbnail">
 	`;
@@ -180,100 +179,5 @@ const showSuperheroDetails = (data) => {
 			powerStatsSelector[count++].classList.add('nice');
 		}
 	}
-
-	document.querySelector('.biography').innerHTML = `
-	<li>
-		<span>Полное имя:</span>
-		<span>${data[0].biography['full-name']}</span>
-	</li>
-	<li>
-		<span>Альтер-эго:</span>
-		<span>${data[0].biography['alter-egos']}</span>
-	</li>
-	<li>
-		<span>Псевдонимы:</span>
-		<span>${data[0].biography['aliases']}</span>
-	</li>
-	<li>
-		<span>Место рождения:</span>
-		<span>${data[0].biography['place-of-birth']}</span>
-	</li>
-	<li>
-		<span>Первое появление:</span>
-		<span>${data[0].biography['first-appearance']}</span>
-	</li>
-	<li>
-		<span>Издатель:</span>
-		<span>${data[0].biography['publisher']}</span>
-	</li>
-	`;
-
-	document.querySelector('.appearance').innerHTML = `
-	<li>
-		<span>
-			<div class="appearance_icon">
-				<i class="fa-solid fa-venus-mars"></i> 
-			</div> 
-			Пол
-		</span>
-		<span>${data[0].appearance['gender']}</span>
-	</li>
-	<li>
-		<span>
-			<div class="appearance_icon">
-				<i class="fa-solid fa-person"></i> 
-			</div>
-			Раса
-		</span>
-		<span>${data[0].appearance['race']}</span>
-	</li>
-	<li>
-		<span>
-			<div class="appearance_icon">
-				<i class="fa-solid fa-arrows-up-down"></i> 
-			</div>
-			Рост
-		</span>
-		<span>${data[0].appearance['height'][1]}</span>
-	</li>
-	<li>
-		<span>
-			<div class="appearance_icon">
-				<i class="fa-solid fa-weight-hanging"></i> 
-			</div>
-			Вес
-		</span>
-		<span>${data[0].appearance['weight'][1]}</span>
-	</li>
-	<li>
-		<span>
-			<div class="appearance_icon">
-				<i class="fa-solid fa-eye"></i> 
-			</div>
-			Цвет глаз
-		</span>
-		<span>${data[0].appearance['eye-color']}</span>
-	</li>
-	<li>
-		<span>
-			<div class="appearance_icon">
-				<i class="fa-solid fa-droplet"></i> 
-			</div>
-			Цвет волос
-		</span>
-		<span>${data[0].appearance['hair-color']}</span>
-	</li>
-	`;
-
-	document.querySelector('.connections').innerHTML = `
-	<li>
-		<span>Группы</span>
-		<span>${data[0].connections['group-affiliation']}</span>
-	</li>
-	<li>
-		<span>Родственники</span>
-		<span>${data[0].connections['relatives']}</span>
-	</li>
-	`;
 	modal.show();
 };
