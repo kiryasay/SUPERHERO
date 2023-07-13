@@ -189,11 +189,11 @@ img{
 display: none;
 }
 .powerstats li{
-    width: 160px;
+    width: 180px;
     display: flex;
     justify-content: space-between;
     margin: 21px auto;
-    padding: 11px 14px 6px 15px;
+    padding: 11px 14px 6px 14px;
     background-color: #06050D;
 }
 .powerstats li div .stats_icon{
@@ -219,6 +219,7 @@ display: none;
     color: var(--milk-color);
     margin: auto 0;
     font-weight: 900;
+    width: 36px;
 }
 .powerstats li > span.bad {
     color: #DA3B19;
@@ -233,7 +234,7 @@ display: none;
     color: #4EDF5C;
 }
 
-.stats_value{
+.stats_value, stats_value-left{
     width: 36px;
 }
 

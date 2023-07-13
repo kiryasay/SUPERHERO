@@ -154,7 +154,7 @@ const showSuperheroDetails = (data) => {
 
 	document.querySelector('.powerstats').innerHTML = `
 	<li>
-		<span class="stats_value">${data[0].powerstats.intelligence}</span>
+		<span class="stats_value-left">${data[0].powerstats.intelligence}</span>
 		<div>
 			<div class="stats_icon">
 				<i class="fa-solid fa-brain"></i>
@@ -163,7 +163,7 @@ const showSuperheroDetails = (data) => {
 		<span class="stats_value">?</span>
 	</li>
 	<li>
-		<span class="stats_value">${data[0].powerstats.strength}</span>
+		<span class="stats_value-left">${data[0].powerstats.strength}</span>
 		<div>
 			<div class="stats_icon">
 				<i class="fa-solid fa-dumbbell"></i>
@@ -172,7 +172,7 @@ const showSuperheroDetails = (data) => {
 		<span class="stats_value">?</span>
 	</li>
 	<li>
-		<span class="stats_value">${data[0].powerstats.speed}</span>
+		<span class="stats_value-left">${data[0].powerstats.speed}</span>
 		<div>
 			<div class="stats_icon">
 				<i class = "fa-solid fa-person-running"></i>
@@ -181,7 +181,7 @@ const showSuperheroDetails = (data) => {
 		<span class="stats_value">?</span>
 	</li>
 	<li>
-		<span class="stats_value">${data[0].powerstats.durability}</span>
+		<span class="stats_value-left">${data[0].powerstats.durability}</span>
 		<div>
 			<div class="stats_icon">
 				<i class = "fa-solid fa-shield"></i>
@@ -190,7 +190,7 @@ const showSuperheroDetails = (data) => {
 		<span class="stats_value">?</span>
 	</li>
 	<li>
-		<span class="stats_value">${data[0].powerstats.power}</span>
+		<span class="stats_value-left">${data[0].powerstats.power}</span>
 		<div>
 			<div class="stats_icon">
 				<i class = "fa-solid fa-fire"></i>
@@ -199,7 +199,7 @@ const showSuperheroDetails = (data) => {
 		<span class="stats_value">?</span>
 	</li>
 	<li>
-		<span class="stats_value">${data[0].powerstats.combat}</span>
+		<span class="stats_value-left">${data[0].powerstats.combat}</span>
 		<div>
 			<div class="stats_icon">
 				<i class = "fa-solid fa-hand-fist"></i>
