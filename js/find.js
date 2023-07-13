@@ -85,29 +85,6 @@ searchForm.search.addEventListener('keyup', () => {
 	}
 });
 
-// function twoStrings(s1, s2) {
-// 	console.log(s1);
-// 	console.log(s2);
-// 	let shortStr;
-// 	let longStr;
-
-// 	if (s1.length < s2.length) {
-// 		shortStr = s1;
-// 		longStr = s2;
-// 	} else {
-// 		shortStr = s2;
-// 		longStr = s1;
-// 	}
-
-// 	for (let i = 0; i < shortStr.length; i++) {
-// 		if (longStr.indexOf(shortStr[i]) !== -1) {
-// 			return 1;
-// 		}
-// 	}
-
-// 	return 0;
-// }
-
 searchList.addEventListener('click', (event) => {
 	let searchId = event.target.dataset.id;
 	console.log(allData);
