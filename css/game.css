@@ -32,7 +32,17 @@ body{
     position: relative;
     top: 170px;
     animation: buildMove 1.5s infinite linear;
-    right: 0px;
+    left:900px;
+}
+#trash{
+    width:50px;
+    height: 50px;
+    background-image: url('/img/trash.png');
+    background-size: 50px 50px;
+    position: absolute;
+    top: 180px;
+    animation: trashMove 2s infinite linear;
+    left:1000px;
 }
 #first-cloud{
     width: 50px;
@@ -66,7 +76,33 @@ body{
 
 @keyframes buildMove {
     0%{
+        left: 900px;
+        opacity: 0;
+    }
+    50%{
         left: 690px;
+        opacity: 0;
+    }
+    55%{
+        left: 692px;
+        opacity: 1;
+    }
+    100%{
+        left: -18px;
+    }
+}
+@keyframes trashMove {
+    0%{
+        left: 1000px;
+        opacity: 0;
+    }
+    50%{
+        left: 690px;
+        opacity: 0;
+    }
+    55%{
+        left: 692px;
+        opacity: 1;
     }
     100%{
         left: -18px;
