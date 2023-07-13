@@ -129,7 +129,7 @@ searchListLeft.addEventListener('click', (event) => {
 		console.log('singleData.id: ' + singleData.id);
 		return searchId === singleData.id;
 	});
-	showSuperheroDetails(singleData);
+	showSuperheroDetailsLeft(singleData);
 	searchListLeft.innerHTML = '';
 });
 
@@ -141,11 +141,11 @@ searchListRight.addEventListener('click', (event) => {
 		console.log('singleData.id: ' + singleData.id);
 		return searchId === singleData.id;
 	});
-	showSuperheroDetails(singleData);
+	showSuperheroDetailsRight(singleData);
 	searchListRight.innerHTML = '';
 });
 
-const showSuperheroDetails = (data) => {
+const showSuperheroDetailsLeft = (data) => {
 	console.log(data);
 	document.querySelector('.app-body-content-thumbnail-left').innerHTML = `
 		<img src ="${data[0].image.url}" alt="" class="thumbnail-left">
@@ -227,5 +227,37 @@ const showSuperheroDetails = (data) => {
 			powerStatsSelector[count++].classList.add('nice');
 		}
 	}
+	modal.show();
+};
+
+const showSuperheroDetailsRight = (data) => {
+	console.log(data);
+	document.querySelector('.app-body-content-thumbnail-left').innerHTML = `
+		<img src ="${data[0].image.url}" alt="" class="thumbnail-left">
+		<div class="name-left">${data[0].name}</div>
+	`;
+
+	document.querySelector('.intelligence-right').innerHTML = `
+	${data[0].powerstats.intelligence}
+	`;
+
+	// const powerStatsSelector = document.querySelectorAll('.powerstats li > .stats_value-left');
+	// const dataLink = data[0].powerstats;
+	// let count = 0;
+	// for (let item in dataLink) {
+	// 	if (dataLink[item] === 'null') {
+	// 		powerStatsSelector[count++].innerHTML = '<span>-</span>';
+	// 		continue;
+	// 	}
+	// 	if (dataLink[item] >= 0 && dataLink[item] < 25) {
+	// 		powerStatsSelector[count++].classList.add('bad');
+	// 	} else if (dataLink[item] >= 25 && dataLink[item] < 50) {
+	// 		powerStatsSelector[count++].classList.add('mid');
+	// 	} else if (dataLink[item] >= 50 && dataLink[item] < 75) {
+	// 		powerStatsSelector[count++].classList.add('good');
+	// 	} else if (dataLink[item] >= 75 && dataLink[item] <= 100) {
+	// 		powerStatsSelector[count++].classList.add('nice');
+	// 	}
+	// }
 	modal.show();
 };
