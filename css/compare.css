@@ -229,6 +229,10 @@ display: none;
     color: #4EDF5C;
 }
 
+.stats_value{
+    width: 36px;
+}
+
 /* show-tab */
 .show-tab{
     display: block;

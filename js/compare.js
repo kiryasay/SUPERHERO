@@ -1,6 +1,5 @@
 const allTabsBody = document.querySelectorAll('.tab-body-single'); //powerstats
 const searchFormLeft = document.querySelector('.app-header-search-left'); //search hero left
-console.log(searchFormLeft);
 let searchList = document.getElementById('search-list'); //search dropdown
 const modal = document.querySelector('#modal');
 
@@ -88,57 +87,64 @@ const showSuperheroDetails = (data) => {
 	console.log(data);
 	document.querySelector('.app-body-content-thumbnail').innerHTML = `
 		<img src = "${data[0].image.url}" alt="" class= "thumbnail">
+		<div class="name">${data[0].name}</div>
 	`;
 	document.querySelector('.name').textContent = data[0].name;
 
 	document.querySelector('.powerstats').innerHTML = `
 	<li>
+		<span class="stats_value">${data[0].powerstats.intelligence}</span>
 		<div>
 			<div class="stats_icon">
 				<i class="fa-solid fa-brain"></i>
 			</div>
 		</div>
-		<span>${data[0].powerstats.intelligence}</span>
+		<span class="stats_value">?</span>
 	</li>
 	<li>
+		<span class="stats_value">${data[0].powerstats.strength}</span>
 		<div>
 			<div class="stats_icon">
 				<i class="fa-solid fa-dumbbell"></i>
 			</div>
 		</div>
-		<span>${data[0].powerstats.strength}</span>
+		<span class="stats_value">?</span>
 	</li>
 	<li>
+		<span class="stats_value">${data[0].powerstats.speed}</span>
 		<div>
 			<div class="stats_icon">
 				<i class = "fa-solid fa-person-running"></i>
 			</div>
 		</div>
-		<span>${data[0].powerstats.speed}</span>
+		<span class="stats_value">?</span>
 	</li>
 	<li>
+		<span class="stats_value">${data[0].powerstats.durability}</span>
 		<div>
 			<div class="stats_icon">
 				<i class = "fa-solid fa-shield"></i>
 			</div>
 		</div>
-		<span>${data[0].powerstats.durability}</span>
+		<span class="stats_value">?</span>
 	</li>
 	<li>
+		<span class="stats_value">${data[0].powerstats.power}</span>
 		<div>
 			<div class="stats_icon">
 				<i class = "fa-solid fa-fire"></i>
 			</div>
 		</div>
-		<span>${data[0].powerstats.power}</span>
+		<span class="stats_value">?</span>
 	</li>
 	<li>
+		<span class="stats_value">${data[0].powerstats.combat}</span>
 		<div>
 			<div class="stats_icon">
 				<i class = "fa-solid fa-hand-fist"></i>
 			</div>
 		</div>
-		<span>${data[0].powerstats.combat}</span>
+		<span class="stats_value">?</span>
 	</li>
 	`;
 
