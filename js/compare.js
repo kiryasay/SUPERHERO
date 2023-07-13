@@ -160,7 +160,7 @@ const showSuperheroDetails = (data) => {
 				<i class="fa-solid fa-brain"></i>
 			</div>
 		</div>
-		<span class="stats_value">?</span>
+		<span class="stats_value-right">?</span>
 	</li>
 	<li>
 		<span class="stats_value-left">${data[0].powerstats.strength}</span>
@@ -169,7 +169,7 @@ const showSuperheroDetails = (data) => {
 				<i class="fa-solid fa-dumbbell"></i>
 			</div>
 		</div>
-		<span class="stats_value">?</span>
+		<span class="stats_value-right">?</span>
 	</li>
 	<li>
 		<span class="stats_value-left">${data[0].powerstats.speed}</span>
@@ -178,7 +178,7 @@ const showSuperheroDetails = (data) => {
 				<i class = "fa-solid fa-person-running"></i>
 			</div>
 		</div>
-		<span class="stats_value">?</span>
+		<span class="stats_value-right">?</span>
 	</li>
 	<li>
 		<span class="stats_value-left">${data[0].powerstats.durability}</span>
@@ -187,7 +187,7 @@ const showSuperheroDetails = (data) => {
 				<i class = "fa-solid fa-shield"></i>
 			</div>
 		</div>
-		<span class="stats_value">?</span>
+		<span class="stats_value-right">?</span>
 	</li>
 	<li>
 		<span class="stats_value-left">${data[0].powerstats.power}</span>
@@ -196,7 +196,7 @@ const showSuperheroDetails = (data) => {
 				<i class = "fa-solid fa-fire"></i>
 			</div>
 		</div>
-		<span class="stats_value">?</span>
+		<span class="stats_value-right">?</span>
 	</li>
 	<li>
 		<span class="stats_value-left">${data[0].powerstats.combat}</span>
@@ -205,16 +205,16 @@ const showSuperheroDetails = (data) => {
 				<i class = "fa-solid fa-hand-fist"></i>
 			</div>
 		</div>
-		<span class="stats_value">?</span>
+		<span class="stats_value-right">?</span>
 	</li>
 	`;
 
-	const powerStatsSelector = document.querySelectorAll('.powerstats li > span');
+	const powerStatsSelector = document.querySelectorAll('.powerstats li > .stats_value-left');
 	const dataLink = data[0].powerstats;
 	let count = 0;
 	for (let item in dataLink) {
 		if (dataLink[item] === 'null') {
-			powerStatsSelector[count++].innerHTML = '<span>Неизвестно</span>';
+			powerStatsSelector[count++].innerHTML = '<span>-</span>';
 			continue;
 		}
 		if (dataLink[item] >= 0 && dataLink[item] < 25) {

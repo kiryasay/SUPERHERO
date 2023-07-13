@@ -103,13 +103,13 @@ img{
     padding: 10px 11px;
 }
 .search-list-item img{
-    width: 54px;
+    width: 51px;
+    max-height: 69px;
     margin-right: 17px;
 }
 .search-list-item .searchListItem-wrapper p{
     font-size: 22px;
     font-weight: 400;
-    margin-top: 16px;
 }
 
 @keyframes fade-in {
@@ -234,8 +234,12 @@ display: none;
     color: #4EDF5C;
 }
 
-.stats_value, stats_value-left{
+.stats_value, .stats_value-left, .stats_value-right{
     width: 36px;
+}
+
+.stats_value-right{
+    text-align: right;
 }
 
 /* show-tab */
