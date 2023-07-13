@@ -8,10 +8,8 @@ let activeTab = 1, allData;
 
 const init = () => {
 	showActiveTabBody();
-	showActiveTabHead();
 };
 
-const showActiveTabHead = () => allTabsHead[activeTab - 1].classList.add('active-tab'); //active button
 
 const showActiveTabBody = () => {
 	hideAllTabBody();
@@ -29,7 +27,6 @@ allTabsHead.forEach(singleTabHead => {
 	singleTabHead.addEventListener('click', () => {
 		hideAllTabHead();
 		activeTab = singleTabHead.dataset.id;
-		showActiveTabHead();
 		showActiveTabBody();
 	});
 });
