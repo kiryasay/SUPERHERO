@@ -1,5 +1,5 @@
 /* eslint-disable indent */
-const questions1 = [
+const questions1 = [ //звёздные войны 1
 	{
 		question: 'Кто работал плотником до съёмок фильма "Звёздные Войны: Новая надежда"?',
 		answers: [
@@ -28,7 +28,7 @@ const questions1 = [
 		]
 	}
 ];
-const questions2 = [
+const questions2 = [ //звёздные войны 2
 	{
 		question: 'Кто был первым злодеем, с которым сталкивался Человек-паук?',
 		answers: [
@@ -58,7 +58,217 @@ const questions2 = [
 	}
 ];
 
-const questions3 = [
+const questions3 = [ //аниме 1
+	{
+		question: 'Как Ванпанчмен обрёл свою силу?',
+		answers: [
+			{ text: 'Украл силу у другого героя', correct: false },
+			{ text: 'Молился день и ночь', correct: false },
+			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
+			{ text: 'Неизвестно', correct: false },
+		]
+	},
+	{
+		question: 'Как Ванпанчмен обрёл свою силу?',
+		answers: [
+			{ text: 'Украл силу у другого героя', correct: false },
+			{ text: 'Молился день и ночь', correct: false },
+			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
+			{ text: 'Неизвестно', correct: false },
+		]
+	},
+	{
+		question: 'Как Ванпанчмен обрёл свою силу?',
+		answers: [
+			{ text: 'Украл силу у другого героя', correct: false },
+			{ text: 'Молился день и ночь', correct: false },
+			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
+			{ text: 'Неизвестно', correct: false },
+		]
+	}
+];
+
+const questions4 = [ //аниме 2
+	{
+		question: 'Как Ванпанчмен обрёл свою силу?',
+		answers: [
+			{ text: 'Украл силу у другого героя', correct: false },
+			{ text: 'Молился день и ночь', correct: false },
+			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
+			{ text: 'Неизвестно', correct: false },
+		]
+	},
+	{
+		question: 'Как Ванпанчмен обрёл свою силу?',
+		answers: [
+			{ text: 'Украл силу у другого героя', correct: false },
+			{ text: 'Молился день и ночь', correct: false },
+			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
+			{ text: 'Неизвестно', correct: false },
+		]
+	},
+	{
+		question: 'Как Ванпанчмен обрёл свою силу?',
+		answers: [
+			{ text: 'Украл силу у другого героя', correct: false },
+			{ text: 'Молился день и ночь', correct: false },
+			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
+			{ text: 'Неизвестно', correct: false },
+		]
+	}
+];
+
+const questions5 = [ //dc comics 1
+	{
+		question: 'Как Ванпанчмен обрёл свою силу?',
+		answers: [
+			{ text: 'Украл силу у другого героя', correct: false },
+			{ text: 'Молился день и ночь', correct: false },
+			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
+			{ text: 'Неизвестно', correct: false },
+		]
+	},
+	{
+		question: 'Как Ванпанчмен обрёл свою силу?',
+		answers: [
+			{ text: 'Украл силу у другого героя', correct: false },
+			{ text: 'Молился день и ночь', correct: false },
+			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
+			{ text: 'Неизвестно', correct: false },
+		]
+	},
+	{
+		question: 'Как Ванпанчмен обрёл свою силу?',
+		answers: [
+			{ text: 'Украл силу у другого героя', correct: false },
+			{ text: 'Молился день и ночь', correct: false },
+			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
+			{ text: 'Неизвестно', correct: false },
+		]
+	}
+];
+
+const questions6 = [ //dc comics 2
+	{
+		question: 'Как Ванпанчмен обрёл свою силу?',
+		answers: [
+			{ text: 'Украл силу у другого героя', correct: false },
+			{ text: 'Молился день и ночь', correct: false },
+			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
+			{ text: 'Неизвестно', correct: false },
+		]
+	},
+	{
+		question: 'Как Ванпанчмен обрёл свою силу?',
+		answers: [
+			{ text: 'Украл силу у другого героя', correct: false },
+			{ text: 'Молился день и ночь', correct: false },
+			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
+			{ text: 'Неизвестно', correct: false },
+		]
+	},
+	{
+		question: 'Как Ванпанчмен обрёл свою силу?',
+		answers: [
+			{ text: 'Украл силу у другого героя', correct: false },
+			{ text: 'Молился день и ночь', correct: false },
+			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
+			{ text: 'Неизвестно', correct: false },
+		]
+	}
+];
+
+const questions7 = [ //marvel comics 1
+	{
+		question: 'Как Ванпанчмен обрёл свою силу?',
+		answers: [
+			{ text: 'Украл силу у другого героя', correct: false },
+			{ text: 'Молился день и ночь', correct: false },
+			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
+			{ text: 'Неизвестно', correct: false },
+		]
+	},
+	{
+		question: 'Как Ванпанчмен обрёл свою силу?',
+		answers: [
+			{ text: 'Украл силу у другого героя', correct: false },
+			{ text: 'Молился день и ночь', correct: false },
+			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
+			{ text: 'Неизвестно', correct: false },
+		]
+	},
+	{
+		question: 'Как Ванпанчмен обрёл свою силу?',
+		answers: [
+			{ text: 'Украл силу у другого героя', correct: false },
+			{ text: 'Молился день и ночь', correct: false },
+			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
+			{ text: 'Неизвестно', correct: false },
+		]
+	}
+];
+
+const questions8 = [ //marvel comics 2
+	{
+		question: 'Как Ванпанчмен обрёл свою силу?',
+		answers: [
+			{ text: 'Украл силу у другого героя', correct: false },
+			{ text: 'Молился день и ночь', correct: false },
+			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
+			{ text: 'Неизвестно', correct: false },
+		]
+	},
+	{
+		question: 'Как Ванпанчмен обрёл свою силу?',
+		answers: [
+			{ text: 'Украл силу у другого героя', correct: false },
+			{ text: 'Молился день и ночь', correct: false },
+			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
+			{ text: 'Неизвестно', correct: false },
+		]
+	},
+	{
+		question: 'Как Ванпанчмен обрёл свою силу?',
+		answers: [
+			{ text: 'Украл силу у другого героя', correct: false },
+			{ text: 'Молился день и ночь', correct: false },
+			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
+			{ text: 'Неизвестно', correct: false },
+		]
+	}
+];
+
+const questions9 = [ //черепашки
+	{
+		question: 'Как Ванпанчмен обрёл свою силу?',
+		answers: [
+			{ text: 'Украл силу у другого героя', correct: false },
+			{ text: 'Молился день и ночь', correct: false },
+			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
+			{ text: 'Неизвестно', correct: false },
+		]
+	},
+	{
+		question: 'Как Ванпанчмен обрёл свою силу?',
+		answers: [
+			{ text: 'Украл силу у другого героя', correct: false },
+			{ text: 'Молился день и ночь', correct: false },
+			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
+			{ text: 'Неизвестно', correct: false },
+		]
+	},
+	{
+		question: 'Как Ванпанчмен обрёл свою силу?',
+		answers: [
+			{ text: 'Украл силу у другого героя', correct: false },
+			{ text: 'Молился день и ночь', correct: false },
+			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
+			{ text: 'Неизвестно', correct: false },
+		]
+	}
+];
+
+const questions10 = [ //random
 	{
 		question: 'Как Ванпанчмен обрёл свою силу?',
 		answers: [
@@ -111,13 +321,20 @@ function startQuiz() {
 
 function showQuestion() {
 	resetState(); //убирает кнопку next и обновляет кнопки с вариантами ответа
-	var setup = randomInteger(1, 3);
+	var setup = randomInteger(1, 10);
 	console.log(setup);
 	let currentQuestion;
 	switch (setup) {
 		case 1: currentQuestion = questions1[currentQuestionIndex]; break;
 		case 2: currentQuestion = questions2[currentQuestionIndex]; break;
 		case 3: currentQuestion = questions3[currentQuestionIndex]; break;
+		case 4: currentQuestion = questions4[currentQuestionIndex]; break;
+		case 5: currentQuestion = questions5[currentQuestionIndex]; break;
+		case 6: currentQuestion = questions6[currentQuestionIndex]; break;
+		case 7: currentQuestion = questions7[currentQuestionIndex]; break;
+		case 8: currentQuestion = questions8[currentQuestionIndex]; break;
+		case 9: currentQuestion = questions9[currentQuestionIndex]; break;
+		case 10: currentQuestion = questions10[currentQuestionIndex]; break;
 	}
 
 	let questionNo = currentQuestionIndex + 1;
