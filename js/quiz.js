@@ -288,15 +288,6 @@ const questions7 = [ //marvel comics 1
 		]
 	},
     {
-		question: 'Какой универститет закончил Тони Старк?',//done5
-		answers: [
-			{ text: 'M.I.T.', correct: true },
-			{ text: 'Caltech', correct: false },
-			{ text: 'Он самоучка', correct: false },
-			{ text: 'Oxford', correct: false },
-		]
-	},
-    {
 		question: 'Кто скрывался за маской Совершенного Человека-Паука?',//done6
 		answers: [
 			{ text: 'Питер Паркер', correct: false },
