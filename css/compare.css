@@ -40,6 +40,7 @@ img{
     padding: 0px 50px 200px 50px;
     border-radius: 6px;
     color: #fff;
+    padding-top: 15px;
 }
 .app-header{
     display: flex;
@@ -128,6 +129,7 @@ img{
     background: transparent;
     max-height: 600px;
     max-width: 1130px;
+    padding-top: 25px;
 }
 .app-body::-webkit-scrollbar{
     width: 7px;
