@@ -152,61 +152,23 @@ const showSuperheroDetailsLeft = (data) => {
 		<div class="name-left">${data[0].name}</div>
 	`;
 
-	document.querySelector('.powerstats').innerHTML = `
-	<li>
-		<span class="stats_value-left">${data[0].powerstats.intelligence}</span>
-		<div>
-			<div class="stats_icon">
-				<i class="fa-solid fa-brain"></i>
-			</div>
-		</div>
-		<span class="stats_value-right">?</span>
-	</li>
-	<li>
-		<span class="stats_value-left">${data[0].powerstats.strength}</span>
-		<div>
-			<div class="stats_icon">
-				<i class="fa-solid fa-dumbbell"></i>
-			</div>
-		</div>
-		<span class="stats_value-right">?</span>
-	</li>
-	<li>
-		<span class="stats_value-left">${data[0].powerstats.speed}</span>
-		<div>
-			<div class="stats_icon">
-				<i class = "fa-solid fa-person-running"></i>
-			</div>
-		</div>
-		<span class="stats_value-right">?</span>
-	</li>
-	<li>
-		<span class="stats_value-left">${data[0].powerstats.durability}</span>
-		<div>
-			<div class="stats_icon">
-				<i class = "fa-solid fa-shield"></i>
-			</div>
-		</div>
-		<span class="stats_value-right">?</span>
-	</li>
-	<li>
-		<span class="stats_value-left">${data[0].powerstats.power}</span>
-		<div>
-			<div class="stats_icon">
-				<i class = "fa-solid fa-fire"></i>
-			</div>
-		</div>
-		<span class="stats_value-right">?</span>
-	</li>
-	<li>
-		<span class="stats_value-left">${data[0].powerstats.combat}</span>
-		<div>
-			<div class="stats_icon">
-				<i class = "fa-solid fa-hand-fist"></i>
-			</div>
-		</div>
-		<span class="stats_value-right">?</span>
-	</li>
+	document.querySelector('.intelligence-left').innerHTML = `
+	${data[0].powerstats.intelligence}
+	`;
+	document.querySelector('.strength-left').innerHTML = `
+	${data[0].powerstats.strength}
+	`;
+	document.querySelector('.speed-left').innerHTML = `
+	${data[0].powerstats.speed}
+	`;
+	document.querySelector('.durability-left').innerHTML = `
+	${data[0].powerstats.durability}
+	`;
+	document.querySelector('.power-left').innerHTML = `
+	${data[0].powerstats.power}
+	`;
+	document.querySelector('.combat-left').innerHTML = `
+	${data[0].powerstats.combat}
 	`;
 
 	const powerStatsSelector = document.querySelectorAll('.powerstats li > .stats_value-left');
@@ -232,32 +194,46 @@ const showSuperheroDetailsLeft = (data) => {
 
 const showSuperheroDetailsRight = (data) => {
 	console.log(data);
-	document.querySelector('.app-body-content-thumbnail-left').innerHTML = `
-		<img src ="${data[0].image.url}" alt="" class="thumbnail-left">
-		<div class="name-left">${data[0].name}</div>
+	document.querySelector('.app-body-content-thumbnail-right').innerHTML = `
+		<img src ="${data[0].image.url}" alt="" class="thumbnail-right">
+		<div class="name-right">${data[0].name}</div>
 	`;
 
 	document.querySelector('.intelligence-right').innerHTML = `
 	${data[0].powerstats.intelligence}
 	`;
-
-	// const powerStatsSelector = document.querySelectorAll('.powerstats li > .stats_value-left');
-	// const dataLink = data[0].powerstats;
-	// let count = 0;
-	// for (let item in dataLink) {
-	// 	if (dataLink[item] === 'null') {
-	// 		powerStatsSelector[count++].innerHTML = '<span>-</span>';
-	// 		continue;
-	// 	}
-	// 	if (dataLink[item] >= 0 && dataLink[item] < 25) {
-	// 		powerStatsSelector[count++].classList.add('bad');
-	// 	} else if (dataLink[item] >= 25 && dataLink[item] < 50) {
-	// 		powerStatsSelector[count++].classList.add('mid');
-	// 	} else if (dataLink[item] >= 50 && dataLink[item] < 75) {
-	// 		powerStatsSelector[count++].classList.add('good');
-	// 	} else if (dataLink[item] >= 75 && dataLink[item] <= 100) {
-	// 		powerStatsSelector[count++].classList.add('nice');
-	// 	}
-	// }
+	document.querySelector('.strength-right').innerHTML = `
+	${data[0].powerstats.strength}
+	`;
+	document.querySelector('.speed-right').innerHTML = `
+	${data[0].powerstats.speed}
+	`;
+	document.querySelector('.durability-right').innerHTML = `
+	${data[0].powerstats.durability}
+	`;
+	document.querySelector('.power-right').innerHTML = `
+	${data[0].powerstats.power}
+	`;
+	document.querySelector('.combat-right').innerHTML = `
+	${data[0].powerstats.combat}
+	`;
+	const powerStatsSelector = document.querySelectorAll('.powerstats li > .stats_value-right');
+	const dataLink = data[0].powerstats;
+	let count = 0;
+	for (let item in dataLink) {
+		if (dataLink[item] === 'null') {
+			powerStatsSelector[count++].innerHTML = '<span>-</span>';
+			continue;
+		}
+		if (dataLink[item] >= 0 && dataLink[item] < 25) {
+			powerStatsSelector[count++].classList.add('bad');
+		} else if (dataLink[item] >= 25 && dataLink[item] < 50) {
+			powerStatsSelector[count++].classList.add('mid');
+		} else if (dataLink[item] >= 50 && dataLink[item] < 75) {
+			powerStatsSelector[count++].classList.add('good');
+		} else if (dataLink[item] >= 75 && dataLink[item] <= 100) {
+			powerStatsSelector[count++].classList.add('nice');
+		}
+	}
 	modal.show();
 };

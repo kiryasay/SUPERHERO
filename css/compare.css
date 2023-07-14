@@ -160,7 +160,7 @@ img{
     padding: 0px;
 }
 
-.app-body-content-thumbnail, .app-body-content-thumbnail-left{
+.app-body-content-thumbnail-right, .app-body-content-thumbnail-left{
     width: 394px;
     display: flex;
     flex-wrap: wrap;
@@ -168,14 +168,15 @@ img{
     align-items: center;
 }
 
-.app-body-content-thumbnail .thumbnail, .app-body-content-thumbnail-left .thumbnail-left{
+.app-body-content-thumbnail-right .thumbnail-right, .app-body-content-thumbnail-left .thumbnail-left{
     width: 336px;
     height: 450px;
     border-radius: 28px;
     overflow: hidden;
+    background-color: #000000ba;
 }
 
-.app-body-content-thumbnail .name, .app-body-content-thumbnail-left .name-left{
+.app-body-content-thumbnail-right .name-right, .app-body-content-thumbnail-left .name-left{
     margin: 0 auto;
     text-transform: uppercase;
     font-size: 30px;
