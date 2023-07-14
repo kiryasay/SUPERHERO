@@ -180,92 +180,290 @@ const questions6 = [ //dc comics 2
 
 const questions7 = [ //marvel comics 1
 	{
-		question: 'Как Ванпанчмен обрёл свою силу?',
+		question: 'Как Питер Паркер стал Человеком-Пауком?',//done1
 		answers: [
-			{ text: 'Украл силу у другого героя', correct: false },
-			{ text: 'Молился день и ночь', correct: false },
-			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
-			{ text: 'Неизвестно', correct: false },
+			{ text: 'Его укусил радиоактивный паук', correct: true },
+			{ text: 'Его облучили радиацией', correct: false },
+			{ text: 'Он получил способности из-за несчастного случая на работе', correct: false },
+			{ text: 'Силы были у него с рождения', correct: false },
 		]
 	},
 	{
-		question: 'Как Ванпанчмен обрёл свою силу?',
+		question: 'Кто смог уничтожить всю вселенную Marvel в одиночку?',//done2
 		answers: [
-			{ text: 'Украл силу у другого героя', correct: false },
-			{ text: 'Молился день и ночь', correct: false },
-			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
-			{ text: 'Неизвестно', correct: false },
+			{ text: 'Dardevil', correct: false },
+			{ text: 'Thor', correct: false },
+			{ text: 'Iron Man', correct: false },
+			{ text: 'Deadpool', correct: true },
 		]
 	},
 	{
-		question: 'Как Ванпанчмен обрёл свою силу?',
+		question: 'Кто был первым носителем Венома?',//done3
 		answers: [
-			{ text: 'Украл силу у другого героя', correct: false },
-			{ text: 'Молился день и ночь', correct: false },
-			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
-			{ text: 'Неизвестно', correct: false },
+			{ text: 'Стив Роджерс', correct: false },
+			{ text: 'Эдди Брок', correct: false },
+			{ text: 'Питер Паркер', correct: true },
+			{ text: 'Норман Озборн', correct: false },
 		]
-	}
+	},
+    {
+		question: 'Как Ник Фьюри в киновселенной Marvel потерял глаз?',//done4
+		answers: [
+			{ text: 'Во время битвы с Капитан Марвел', correct: false },
+			{ text: 'Его поцарапал пришелец в обличии кота', correct: true },
+			{ text: 'Из-за несчастного случая в детстве', correct: false },
+			{ text: 'На самом деле он прячет за повязкой здоровый глаз', correct: false },
+		]
+	},
+    {
+		question: 'Какой универститет закончил Тони Старк?',//done5
+		answers: [
+			{ text: 'M.I.T.', correct: true },
+			{ text: 'Caltech', correct: false },
+			{ text: 'Он самоучка', correct: false },
+			{ text: 'Oxford', correct: false },
+		]
+	},
+    {
+		question: 'Какой универститет закончил Тони Старк?',//done5
+		answers: [
+			{ text: 'M.I.T.', correct: true },
+			{ text: 'Caltech', correct: false },
+			{ text: 'Он самоучка', correct: false },
+			{ text: 'Oxford', correct: false },
+		]
+	},
+    {
+		question: 'Кто скрывался за маской Совершенного Человека-Паука?',//done6
+		answers: [
+			{ text: 'Питер Паркер', correct: false },
+			{ text: 'Уейд Уилсон', correct: false },
+			{ text: 'Доктор Осьминог', correct: true },
+			{ text: 'Майлз Моралес', correct: false },
+		]
+	},
+    {
+		question: 'Кем Веному приходится Карнаж?',//done7
+		answers: [
+			{ text: 'Дядей', correct: false },
+			{ text: 'Они никак не связаны', correct: false },
+			{ text: 'Братом', correct: false },
+			{ text: 'Сыном', correct: true },
+		]
+	},
+    {
+		question: 'Как называется молот Тора?',//done8
+		answers: [
+			{ text: 'Мьёльнир', correct: true },
+			{ text: 'Гром', correct: false },
+			{ text: 'Сонм Богов', correct: false },
+			{ text: 'Разрушитель', correct: false },
+		]
+	},
+    {
+		question: 'Какие три предмета, по словам Рокета, ему нужны, чтобы сбежать из тюрьмы?',//done9
+		answers: [
+			{ text: 'Нож, провода кабеля и микстейп Питера', correct: false },
+			{ text: 'Защитная карта, батарея и протез ноги', correct: true },
+			{ text: 'Бинокль, детонатор и протез ноги', correct: false },
+			{ text: 'Карта безопасности, вилка и голеностопный монитор', correct: false },
+		]
+	},
+    {
+		question: 'Сколько существует Камней Бесконечности?',//done10
+		answers: [
+			{ text: '7', correct: false },
+			{ text: '5', correct: false},
+			{ text: '4', correct: false },
+			{ text: '6', correct: true },
+		]
+	},
 ];
 
 const questions8 = [ //marvel comics 2
 	{
-		question: 'Как Ванпанчмен обрёл свою силу?',
+		question: 'В каком году Человек-паук впервые появился в комиксе?',//done1
 		answers: [
-			{ text: 'Украл силу у другого героя', correct: false },
-			{ text: 'Молился день и ночь', correct: false },
-			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
-			{ text: 'Неизвестно', correct: false },
+			{ text: 'В 1963', correct: false },
+			{ text: 'В 1972', correct: false },
+			{ text: 'В 1962', correct: true },
+			{ text: 'В 1958', correct: false },
 		]
 	},
 	{
-		question: 'Как Ванпанчмен обрёл свою силу?',
+		question: 'В каком комиксе состоялось первое появление Человека-Паука?',//done2
 		answers: [
-			{ text: 'Украл силу у другого героя', correct: false },
-			{ text: 'Молился день и ночь', correct: false },
-			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
-			{ text: 'Неизвестно', correct: false },
+			{ text: 'Marvel comics #1', correct: false },
+			{ text: 'Action Comics #1', correct: false },
+			{ text: 'Amazing Spider-man #1', correct: false },
+			{ text: 'Amazing Fantasy #15', correct: true },
 		]
 	},
 	{
-		question: 'Как Ванпанчмен обрёл свою силу?',
+		question: 'Какого из перечисленных псевдонимов у Человека-паука никогда не было?',//done3
 		answers: [
-			{ text: 'Украл силу у другого героя', correct: false },
-			{ text: 'Молился день и ночь', correct: false },
-			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
-			{ text: 'Неизвестно', correct: false },
+			{ text: 'Аннигилятор', correct: true },
+			{ text: 'Сумрак', correct: false },
+			{ text: 'Продиджи', correct: false },
+			{ text: 'Рикошет', correct: false },
 		]
-	}
+	},
+    {
+		question: 'Кто такой Бен Рейли (Алый Паук)?',//done4
+		answers: [
+			{ text: 'Сводный брат Майлза Моралеса', correct: false },
+			{ text: 'Брат Стива Роджерса', correct: false },
+			{ text: 'Клон Питера Паркера', correct: true },
+			{ text: 'Отец Тони Старка', correct: false },
+		]
+	},
+    {
+		question: 'Какая была последняя фраза Гоблина ( трилогия Сэма Рэйми)?',//done5
+		answers: [
+			{ text: 'Не говори Гарри', correct: true },
+			{ text: 'Будь ты проклят Человек-Паук!', correct: false },
+			{ text: 'Питер, я твой отец', correct: false },
+			{ text: 'Это я убил твоего дядю', correct: false },
+		]
+	},
+    {
+		question: 'Выбери вариант продолжения фразы Отто Октавиуса( трилогия Сэма Рэйми)?',//done6
+		answers: [
+			{ text: 'Интеллект это не привилегия а дар, и он не должен служить на благо!', correct: false },
+			{ text: 'Интеллект это привилегия а не дар, и он должен служить на благо!', correct: false },
+			{ text: 'Интеллект это не привилегия а дар, и он должен служить на благо!', correct: true },
+			{ text: 'Интеллект это дар, и он должен служить на благо', correct: false },
+		]
+	},
+    {
+		question: 'Как зовут дочь Питера Паркера?',//done7
+		answers: [
+			{ text: 'Филиция', correct: false },
+			{ text: 'Мишель', correct: false },
+			{ text: 'Гвен ', correct: false },
+			{ text: 'Мэй ', correct: true },
+		]
+	},
+    {
+		question: 'В фильме «Человек-Паук: Возвращение домой» Паучок борется с бандой налетчиков в масках Мстителей. К чему отсылает эта сцена?',//done8
+		answers: [
+			{ text: 'К номеру 42 серии комиксов Ultimate Spider-Man, где один из грабителей носил маску Бэтмена.', correct: true },
+			{ text: 'Ни к чему, оригинальная находка фильма', correct: false },
+			{ text: 'Ко второй части «Железного человека», где ребенок носил похожую маску супергероя. ', correct: false },
+			{ text: 'К номеру 649 серии комиксов The Amazing Spider-Man, где бандиты Кнгпина используют маски супергероев для ограбления лаборатории Horizon Labs', correct: false},
+		]
+	},
+    {
+		question: 'Кто был первым злодеем, с которым сталкивался Человек-паук?',//done 9
+		answers: [
+			{ text: 'Доктор Осьминог', correct: false },
+			{ text: 'Хамелеон', correct: true },
+			{ text: 'Носорог', correct: false },
+			{ text: 'Зелёный гоблин', correct: false },
+		]
+	},
+    {
+		question: 'Чью свадьбу остановил Человек-паук?',//done10
+		answers: [
+			{ text: 'Гвен Стейсти и Майла Моралеса', correct: false },
+			{ text: 'Тони Старка и Пеппер Потс', correct: false },
+			{ text: 'Тети Мей и Доктора Осьминога', correct: true },
+			{ text: 'Мери Джейн и Флеша Томпсона', correct: false },
+		]
+	},
 ];
 
 const questions9 = [ //черепашки
 	{
-		question: 'Как Ванпанчмен обрёл свою силу?',
+		question: 'В честь кого названы Черепаки Ниндзя?',//done1
 		answers: [
-			{ text: 'Украл силу у другого героя', correct: false },
-			{ text: 'Молился день и ночь', correct: false },
-			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
-			{ text: 'Неизвестно', correct: false },
+			{ text: 'Самураев', correct: false },
+			{ text: 'Ученых которые создали мутаген', correct: false },
+			{ text: 'Художников Эпохи возрождения', correct: true },
+			{ text: 'Персонажей комиксов DC', correct: false },
 		]
 	},
 	{
-		question: 'Как Ванпанчмен обрёл свою силу?',
+		question: 'Какой любимый супергерой у Черепашек Ниндзя?',//done2
 		answers: [
-			{ text: 'Украл силу у другого героя', correct: false },
-			{ text: 'Молился день и ночь', correct: false },
-			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
-			{ text: 'Неизвестно', correct: false },
+			{ text: 'Бэтмэн', correct: true },
+			{ text: 'Человек-Паук', correct: false },
+			{ text: 'Супериен', correct: false},
+			{ text: 'Халк', correct: false },
 		]
 	},
 	{
-		question: 'Как Ванпанчмен обрёл свою силу?',
+		question: 'Где живут Черепашки Ниндзя?',//done3
 		answers: [
-			{ text: 'Украл силу у другого героя', correct: false },
-			{ text: 'Молился день и ночь', correct: false },
-			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
-			{ text: 'Неизвестно', correct: false },
+			{ text: 'Под мостом', correct: false },
+			{ text: 'В доме', correct: false },
+			{ text: 'В квартире', correct: false },
+			{ text: 'В канализации', correct: true },
 		]
-	}
+	},
+    {
+		question: 'Из какого измерения прибыли Кренги во вселенной Черепашек Ниндзя?',//done4
+		answers: [
+			{ text: 'Измерение игрик', correct: false },
+			{ text: 'Измерение икс', correct: true },
+			{ text: 'Измерение пси', correct: false },
+			{ text: 'Альфа Центавра', correct: false },
+		]
+	},
+    {
+		question: 'Любимая еда Черепашек Ниндзя?',//done5
+		answers: [
+			{ text: 'Паста', correct: false },
+			{ text: 'Роллы', correct: false},
+			{ text: 'Пицца', correct: true },
+			{ text: 'Бургеры', correct: false },
+		]
+	},
+    {
+		question: 'Как звали питомца Рафаэля из Черепашек Ниндзя?',//done6
+		answers: [
+			{ text: 'Спайк', correct: true },
+			{ text: 'Гайк', correct: false},
+			{ text: 'Кожеголовый', correct: false },
+			{ text: 'Найк', correct: false },
+		]
+	},
+    {
+		question: 'Какое Настоящие имя у Сплинтера из Черепашек Ниндзя',//done7
+		answers: [
+			{ text: 'Акиро Йоши', correct: false },
+			{ text: 'Хамато Йоши', correct: true},
+			{ text: 'Ороку Саки', correct: false },
+			{ text: 'Хамато Вива', correct: false },
+		]
+	},
+    {
+		question: 'Кто такой Шредер из Черепашек Ниндзя',//done8
+		answers: [
+			{ text: 'Человек', correct: true },
+			{ text: 'Мутант', correct: false},
+			{ text: 'Пришелец', correct: false },
+			{ text: 'Робот', correct: false },
+		]
+	},
+    {
+		question: 'Любимая фраза Микеланджело из Черепашек Ниндзя',//done9
+		answers: [
+			{ text: 'Все вместе', correct: false },
+			{ text: 'Кей О', correct: false},
+			{ text: 'Погнали', correct: false },
+			{ text: 'Буякаша', correct: true },
+		]
+	},
+    {
+		question: 'Какую фразу выкрикивают все Черепашки Ниндзя',//done10
+		answers: [
+			{ text: 'Аригато', correct: false },
+			{ text: 'Кавабанга', correct: true},
+			{ text: 'Погнали', correct: false },
+			{ text: 'Сайонара', correct: false },
+		]
+	},
 ];
 
 const questions10 = [ //random
