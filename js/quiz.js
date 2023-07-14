@@ -1,5 +1,5 @@
 /* eslint-disable indent */
-const questions = [
+const questions1 = [
 	{
 		question: 'Кто работал плотником до съёмок фильма "Звёздные Войны: Новая надежда"?',
 		answers: [
@@ -7,6 +7,35 @@ const questions = [
 			{ text: 'Марк Хэмилл', correct: false },
 			{ text: 'Питер Кушинг', correct: false },
 			{ text: 'Кэрри Фишер', correct: false },
+		]
+	},
+	{
+		question: 'Кто возглавлял 501 легион во времена Войн клонов?',
+		answers: [
+			{ text: 'Энакин Скайуокер', correct: true },
+			{ text: 'Асока Тано', correct: false },
+			{ text: 'Капитан Рекс', correct: false },
+			{ text: 'Командир Коуди', correct: false },
+		]
+	},
+	{
+		question: 'Кто работал плотником до съёмок фильма "Звёздные Войны: Новая надежда"?',
+		answers: [
+			{ text: 'Харрисон Форд', correct: true },
+			{ text: 'Марк Хэмилл', correct: false },
+			{ text: 'Питер Кушинг', correct: false },
+			{ text: 'Кэрри Фишер', correct: false },
+		]
+	}
+];
+const questions2 = [
+	{
+		question: 'Кто был первым злодеем, с которым сталкивался Человек-паук?',
+		answers: [
+			{ text: 'Доктор Осьминог', correct: false },
+			{ text: 'Хамелеон', correct: true },
+			{ text: 'Носорог', correct: false },
+			{ text: 'Зелёный гоблин', correct: false },
 		]
 	},
 	{
@@ -19,32 +48,33 @@ const questions = [
 		]
 	},
 	{
-		question: 'Кто был первым злодеем, с которым сталкивался Человек-паук?',
+		question: 'В какой серии комиксов впервые появился Человек-паук?',
 		answers: [
-			{ text: 'Доктор Осьминог', correct: false },
-			{ text: 'Хамелеон', correct: true },
-			{ text: 'Носорог', correct: false },
-			{ text: 'Зелёный гоблин', correct: false },
+			{ text: 'Amazing Fantasy', correct: true },
+			{ text: 'Friendly Neighborhood Spider-Man', correct: false },
+			{ text: 'Venom', correct: false },
+			{ text: 'Secret War', correct: false },
 		]
 	}
 ];
-const questions2 = [
+
+const questions3 = [
 	{
-		question: 'gergergergerg',
+		question: 'Как Ванпанчмен обрёл свою силу?',
 		answers: [
-			{ text: 'Shark', correct: false },
-			{ text: 'Whale', correct: true },
-			{ text: 'Giraffe', correct: false },
-			{ text: 'Elephant', correct: false },
+			{ text: 'Украл силу у другого героя', correct: false },
+			{ text: 'Молился день и ночь', correct: false },
+			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
+			{ text: 'Неизвестно', correct: false },
 		]
 	},
 	{
-		question: 'ergergergergerger',
+		question: 'Как Ванпанчмен обрёл свою силу?',
 		answers: [
-			{ text: 'Peter', correct: true },
-			{ text: 'Whale', correct: false },
-			{ text: 'Giraffe', correct: false },
-			{ text: 'Elephant', correct: false },
+			{ text: 'Украл силу у другого героя', correct: false },
+			{ text: 'Молился день и ночь', correct: false },
+			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
+			{ text: 'Неизвестно', correct: false },
 		]
 	},
 	{
@@ -65,7 +95,6 @@ function randomInteger(min, max) {
 }
 
 
-
 const questionElement = document.getElementById('question');
 const answerButtons = document.getElementById('answer-buttons');
 const nextButton = document.getElementById('next-btn');
@@ -82,14 +111,13 @@ function startQuiz() {
 
 function showQuestion() {
 	resetState(); //убирает кнопку next и обновляет кнопки с вариантами ответа
-	var setup = randomInteger(1, 4);
+	var setup = randomInteger(1, 3);
 	console.log(setup);
 	let currentQuestion;
 	switch (setup) {
-		case 1: currentQuestion = questions[currentQuestionIndex]; break;
+		case 1: currentQuestion = questions1[currentQuestionIndex]; break;
 		case 2: currentQuestion = questions2[currentQuestionIndex]; break;
-		case 3: currentQuestion = questions[currentQuestionIndex]; break;
-		case 4: currentQuestion = questions[currentQuestionIndex]; break;
+		case 3: currentQuestion = questions3[currentQuestionIndex]; break;
 	}
 
 	let questionNo = currentQuestionIndex + 1;
@@ -135,14 +163,14 @@ function selectAnswer(e) {
 
 function showScore() {
 	resetState();
-	questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+	questionElement.innerHTML = `You scored ${score} out of ${questions1.length}!`;
 	nextButton.innerHTML = 'Play Again';
 	nextButton.style.display = 'block';
 }
 
 function handleNextButton() {
 	currentQuestionIndex++;
-	if (currentQuestionIndex < questions.length) {
+	if (currentQuestionIndex < questions1.length) {
 		showQuestion();
 	}
 	else {
@@ -151,7 +179,7 @@ function handleNextButton() {
 }
 
 nextButton.addEventListener('click', () => {
-	if (currentQuestionIndex < questions.length) {
+	if (currentQuestionIndex < questions1.length) {
 		handleNextButton();
 	}
 	else {
