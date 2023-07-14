@@ -1,7 +1,7 @@
 /* eslint-disable indent */
 const questions1 = [ //звёздные войны 1
 	{
-		question: 'Кто работал плотником до съёмок фильма "Звёздные Войны: Новая надежда"?',
+		question: 'Кто из актёров работал плотником до съёмок фильма "Звёздные Войны: Новая надежда"?',
 		answers: [
 			{ text: 'Харрисон Форд', correct: true },
 			{ text: 'Марк Хэмилл', correct: false },
@@ -19,12 +19,75 @@ const questions1 = [ //звёздные войны 1
 		]
 	},
 	{
-		question: 'Кто работал плотником до съёмок фильма "Звёздные Войны: Новая надежда"?',
+		question: 'Каково настоящее имя Малыша Йоды?',
 		answers: [
-			{ text: 'Харрисон Форд', correct: true },
-			{ text: 'Марк Хэмилл', correct: false },
-			{ text: 'Питер Кушинг', correct: false },
-			{ text: 'Кэрри Фишер', correct: false },
+			{ text: 'Йаддль', correct: false },
+			{ text: 'Неизвестно', correct: false },
+			{ text: 'Грогу', correct: true },
+			{ text: 'Минч', correct: false },
+		]
+	},
+	{
+		question: 'Кто сделал C-3PO?',
+		answers: [
+			{ text: 'Неизвестно', correct: false },
+			{ text: 'Лея Органа', correct: false },
+			{ text: 'Люк Скайуокер', correct: false },
+			{ text: 'Энакин Скайуокер', correct: true },
+		]
+	},
+	{
+		question: 'На какой планете Йода провёл свои последние годы?',
+		answers: [
+			{ text: 'Татуин', correct: false },
+			{ text: 'Дагоба', correct: true },
+			{ text: 'Хот', correct: false },
+			{ text: 'Датомир', correct: false },
+		]
+	},
+	{
+		question: 'Джа-Джа Бинкс - персонаж из какой расы?',
+		answers: [
+			{ text: 'Гаморреанцы', correct: false },
+			{ text: 'Твилеки', correct: false },
+			{ text: 'Кел-доры', correct: false },
+			{ text: 'Гунганы', correct: true },
+		]
+	},
+	{
+		question: 'Кто из перечисленных пережил приказ 66?',
+		answers: [
+			{ text: 'Луминара Ундули', correct: false },
+			{ text: 'Кит Фисто', correct: false },
+			{ text: 'Кэл Кестис', correct: true },
+			{ text: 'Пло Кун', correct: false },
+		]
+	},
+	{
+		question: 'Кто убил Хана Соло?',
+		answers: [
+			{ text: 'Кайло рен', correct: true },
+			{ text: 'Дарт Вейдер', correct: false },
+			{ text: 'Капитан Фазма', correct: false },
+			{ text: 'Боба Фетт', correct: false },
+		]
+	},
+	{
+		question: 'Дарт Тиранус был также известен как?',
+		answers: [
+			{ text: 'Гранд-инквизитор', correct: false },
+			{ text: 'Генерал Гривус', correct: false },
+			{ text: 'Император Палпатин', correct: false },
+			{ text: 'Граф дуку', correct: true },
+		]
+	},
+	{
+		question: 'Кто, будучи мастером джедаем, приказал создать армию клонов?',
+		answers: [
+			{ text: 'Квай-Гон Джинн', correct: false },
+			{ text: 'Сайфо-Диас', correct: true },
+			{ text: 'Оби-ван Кеноби', correct: false },
+			{ text: 'Ки-Ади-Мунди', correct: false },
 		]
 	}
 ];
