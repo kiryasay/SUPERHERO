@@ -11,11 +11,12 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/game.css">
     <script src="js/three.r134.min.js"></script>
     <script src="js/vanta.net.min.js"></script>
     <script src="js/script.js" defer> </script>
     <script src="js/game.js" defer></script>
-    
+
 </head>
 
 <body>
@@ -51,10 +52,19 @@
         </div>
     </header>
     <section class="intro" id="intro">
+        <div class="app">
+            <div class="game-window">
+                <canvas id="canvas" width="500" height="500">
+                    
+                </canvas>
+                <img src="img/city.jpg"  class = "back" id = "start" alt="">
+                <!-- 288 -->
+            </div>
+        </div>
     </section>
 </body>
 
-</html> 
+</html>
 <!--   <div class="game-block">
             <div class="game" id = "game">
                 <div id="hero"></div>

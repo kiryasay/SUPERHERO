@@ -1,0 +1,19 @@
+body{
+    overflow-y: hidden;
+}
+.app{
+    padding-top: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.game-window{
+    width: 490px;
+}
+.back{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    bottom: 500px;
+}
