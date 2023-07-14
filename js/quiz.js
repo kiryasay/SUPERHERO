@@ -1,20 +1,30 @@
+/* eslint-disable indent */
 const questions = [
 	{
-		question: 'Wich is largest animal',
+		question: 'Кто работал плотником до съёмок фильма "Звёздные Войны: Новая надежда"?',
 		answers: [
-			{ text: 'Shark', correct: false },
-			{ text: 'Whale', correct: true },
-			{ text: 'Giraffe', correct: false },
-			{ text: 'Elephant', correct: false },
+			{ text: 'Харрисон Форд', correct: true },
+			{ text: 'Марк Хэмилл', correct: false },
+			{ text: 'Питер Кушинг', correct: false },
+			{ text: 'Кэрри Фишер', correct: false },
 		]
 	},
 	{
-		question: 'Spider man is',
+		question: 'В какой серии комиксов впервые появился Человек-паук?',
 		answers: [
-			{ text: 'Peter', correct: true },
-			{ text: 'Whale', correct: false },
-			{ text: 'Giraffe', correct: false },
-			{ text: 'Elephant', correct: false },
+			{ text: 'Amazing Fantasy', correct: true },
+			{ text: 'Friendly Neighborhood Spider-Man', correct: false },
+			{ text: 'Venom', correct: false },
+			{ text: 'Secret War', correct: false },
+		]
+	},
+	{
+		question: 'Кто был первым злодеем, с которым сталкивался Человек-паук?',
+		answers: [
+			{ text: 'Доктор Осьминог', correct: false },
+			{ text: 'Хамелеон', correct: true },
+			{ text: 'Носорог', correct: false },
+			{ text: 'Зелёный гоблин', correct: false },
 		]
 	}
 ];
@@ -35,6 +45,15 @@ const questions2 = [
 			{ text: 'Whale', correct: false },
 			{ text: 'Giraffe', correct: false },
 			{ text: 'Elephant', correct: false },
+		]
+	},
+	{
+		question: 'Как Ванпанчмен обрёл свою силу?',
+		answers: [
+			{ text: 'Украл силу у другого героя', correct: false },
+			{ text: 'Молился день и ночь', correct: false },
+			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
+			{ text: 'Неизвестно', correct: false },
 		]
 	}
 ];
@@ -62,13 +81,17 @@ function startQuiz() {
 }
 
 function showQuestion() {
-	resetState();
-	var setup = randomInteger(0, 1);
+	resetState(); //убирает кнопку next и обновляет кнопки с вариантами ответа
+	var setup = randomInteger(1, 4);
+	console.log(setup);
 	let currentQuestion;
 	switch (setup) {
-		case 0: currentQuestion = questions[currentQuestionIndex]; break;
-		case 1: currentQuestion = questions2[currentQuestionIndex]; break;
+		case 1: currentQuestion = questions[currentQuestionIndex]; break;
+		case 2: currentQuestion = questions2[currentQuestionIndex]; break;
+		case 3: currentQuestion = questions[currentQuestionIndex]; break;
+		case 4: currentQuestion = questions[currentQuestionIndex]; break;
 	}
+
 	let questionNo = currentQuestionIndex + 1;
 	questionElement.innerHTML = questionNo + '. ' + currentQuestion.question;
 
