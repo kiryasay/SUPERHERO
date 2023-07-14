@@ -1,3 +1,20 @@
+:root{
+    --red-color: #E42759;
+    --blue-color: #00001E;
+    --white-color: white;
+    --milk-color: #FEFDFA;
+    --yellow-color: #F7CF54;
+    --dark-color:black;
+    --light-color: #fff;
+    --grey-color: #505050;
+    --trans-color:transparent;
+    --icons-color: #B6B6B6;
+    --green-color:rgb(145, 223, 145);
+    --mistake-color: rgb(215, 93, 93) ;
+}
+body{
+    overflow-y:hidden;
+}
 .window{
     box-sizing: border-box;
     display: flex;
@@ -6,17 +23,18 @@
     padding-top: 100px;
 }
 .app{
-    background: white;
+    background: var(--blue-color);
     width: 90%;
     max-width: 600px;
     border-radius: 10px;
     padding: 30px;
+    box-shadow: 0px 0px 200px var(--red-color);
 }
 .app h1{
     font-size: 25px;
-    color: #E42759;
+    color: var(--light-color);
     font-weight: 600;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--yellow-color);
     padding-bottom: 30px;
 
 }
@@ -25,7 +43,7 @@
 }
 .quiz h2{
     font-size: 18px;
-    color: #E42759;
+    color: var(--light-color);
     font-weight: 600;
 }
 #answer-buttons{
@@ -34,9 +52,9 @@
 }
 .btn{
     background: white;
-    color: #E42759;
+    color: var(--grey-color);
     font-weight: 500;
-    border: 1px solid black;
+    border: 1px solid var(--grey-color);
     padding: 10px;
     margin: 10px 0;
     text-align: left;
@@ -46,15 +64,15 @@
 
 }
 .btn:hover:not([disabled]){
-    background: black;
-    color: white;
+    background: var(--red-color);
+    color: var(--light-color);
 }
 .btn:disabled{
     cursor: no-drop;
 }
 #next-btn{
     background: #E42759;
-    color:black;
+    color:var(--light-color);
     font-weight: 500px;
     width: 150px;
     border:0;
@@ -64,9 +82,13 @@
     cursor: pointer;
     display: none;
 }
+#next-btn:hover{
+    color: var(--blue-color);
+    transition: all 0.3s;
+}
 .correct{
-    background: green;
+    background: var(--green-color);
 }
 .incorrect{
-    background: red;
+    background: var(--mistake-color);
 }

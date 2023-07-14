@@ -18,6 +18,35 @@ const questions = [
         ]
     }
 ];
+const questions2 = [
+    {
+        question: "gergergergerg",
+        answers: [
+            {text:"Shark", correct: false},
+            {text:"Whale", correct: true},
+            {text:"Giraffe", correct: false},
+            {text:"Elephant", correct: false},
+        ]
+    },
+    {
+        question: "ergergergergerger",
+        answers: [
+            {text:"Peter", correct: true},
+            {text:"Whale", correct: false},
+            {text:"Giraffe", correct: false},
+            {text:"Elephant", correct: false},
+        ]
+    }
+];
+
+function randomInteger(min, max) {
+    // получить случайное число от (min-0.5) до (max+0.5)
+    let rand = min - 0.5 + Math.random() * (max - min + 1);
+    return Math.round(rand);
+  }
+
+
+
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
@@ -34,7 +63,13 @@ function startQuiz(){
 
 function showQuestion(){
     resetState();
-    let currentQuestion = questions[currentQuestionIndex];
+    var setup = randomInteger(0, 1);
+    let currentQuestion;
+    switch(setup)
+    {
+        case 0:currentQuestion = questions[currentQuestionIndex]; break;
+        case 1:currentQuestion = questions2[currentQuestionIndex]; break;
+    }
     let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
 
@@ -101,6 +136,7 @@ nextButton.addEventListener("click", ()=>{
         startQuiz();
     }
 });
+
 
 startQuiz();
 
