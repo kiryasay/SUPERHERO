@@ -149,7 +149,7 @@ const showSuperheroDetailsLeft = (data) => {
 	console.log(data);
 	document.querySelector('.app-body-content-thumbnail-left').innerHTML = `
 		<img src ="${data[0].image.url}" alt="" class="thumbnail-left">
-		<div class="name-left">${data[0].name}</div>
+		<div class="name-left visible">${data[0].name}</div>
 	`;
 
 	document.querySelector('.intelligence-left').innerHTML = `
@@ -196,7 +196,7 @@ const showSuperheroDetailsRight = (data) => {
 	console.log(data);
 	document.querySelector('.app-body-content-thumbnail-right').innerHTML = `
 		<img src ="${data[0].image.url}" alt="" class="thumbnail-right">
-		<div class="name-right">${data[0].name}</div>
+		<div class="name-right visible">${data[0].name}</div>
 	`;
 
 	document.querySelector('.intelligence-right').innerHTML = `
@@ -236,4 +236,5 @@ const showSuperheroDetailsRight = (data) => {
 		}
 	}
 	modal.show();
+
 };

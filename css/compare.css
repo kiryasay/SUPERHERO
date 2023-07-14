@@ -10,6 +10,12 @@
     --trans-color:transparent;
     --icons-color: #B6B6B6;
 }
+.not-visible {
+    visibility: hidden;
+}
+.visible {
+    visibility: visible;
+}
 body{
     overflow-y: hidden;
 }
@@ -145,6 +151,7 @@ img{
 }
 
 .app-body-content-list{
+    padding-top: 13px;
     width: 210px;
     height: 500px;
 }
