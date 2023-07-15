@@ -59,7 +59,7 @@ section
 
 .cards_block .card:hover .card_img{
     transform: 
-        scale(1.05)
+        scale(1.05)0376f2
         translateY(-0.3rem);
 }
 
@@ -168,14 +168,23 @@ section
     max-width: 333px;
     height: 402px;
     color: #FEFDFA;
-    font-size: 24px;
+    font-size: 23px;
     font-weight: 800;
-    bottom: 400px;
+    bottom: 430px;
     left: 900px;
+    background-color:#00000075;
+    border-radius:24px;
+    padding: 10px;
 }
 
 .cards-text .heroes-text{
-    margin-bottom: 160px;
+    /* margin-bottom: 160px; */
+}
+
+.cards-text .heroes-text span{
+    color: #E42759;
+    font-weight: 900;
+    letter-spacing: 2px;
 }
 
 /* .wrap { стили для карточек

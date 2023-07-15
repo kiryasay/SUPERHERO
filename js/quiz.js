@@ -219,7 +219,7 @@ const questions3 = [ //аниме 1
 			{ text: 'Класс C', correct: true },
 			{ text: 'Класс A', correct: false },
 			{ text: 'Класс B', correct: false },
-			{ text: 'Класс C', correct: false },
+			{ text: 'Класс S', correct: false },
 		]
 	},
 	{
@@ -343,7 +343,7 @@ const questions4 = [ //аниме 2
 		]
 	},
 	{
-		question: 'Как звали девятихвостого?',
+		question: 'Как звали девятихвостого в аниме "Наруто"?',
 		answers: [
 			{ text: 'Сайкен', correct: false },
 			{ text: 'Шукаку', correct: false },
@@ -384,10 +384,10 @@ const questions5 = [ //dc comics 1
 	{
 		question: 'Имя настоящего отца Супермена?',//done2
 		answers: [
-			{ text: 'Джон-эл', correct: false },
-			{ text: 'Джордж-эл', correct: false },
+			{ text: 'Джон-Эл', correct: false },
+			{ text: 'Джордж-Эл', correct: false },
 			{ text: 'Джор-Эл', correct: true },
-			{ text: 'Карл-эл', correct: false },
+			{ text: 'Карл-Эл', correct: false },
 		]
 	},
 	{
@@ -395,7 +395,7 @@ const questions5 = [ //dc comics 1
 		answers: [
 			{ text: 'Джейсон Тодд', correct: true },
 			{ text: 'Дик Грейсон', correct: false },
-			{ text: 'Дэмиан Уэйе', correct: false },
+			{ text: 'Дэмиан Уэйн', correct: false },
 			{ text: 'Тим Дрейк', correct: false },
 		]
 	},
@@ -403,7 +403,7 @@ const questions5 = [ //dc comics 1
 		question: 'Кто из персонажей был членом, как "Мстителей", так и "Лиги Справедливости"?',//done4
 		answers: [
 			{ text: 'Супермен', correct: false },
-			{ text: 'Бэтемен', correct: false },
+			{ text: 'Бэтмен', correct: false },
 			{ text: 'Соколиный Глаз', correct: true },
 			{ text: 'Человек-Паук', correct: false },
 		]
@@ -439,13 +439,13 @@ const questions5 = [ //dc comics 1
 		question: 'От какого издания произошло сокращение в названии DC Comics?',//done8
 		answers: [
 			{ text: 'Detective Comics', correct: true },
-			{ text: 'Dark Comisc', correct: false },
+			{ text: 'Dark Comics', correct: false },
 			{ text: 'Doolitle Comics', correct: false },
 			{ text: 'Dangerous Comics', correct: false },
 		]
 	},
 	{
-		question: 'Кто носит имя - Оракул в комиксах про Бэтмена?',//done9
+		question: 'Кто носит имя "Оракул" в комиксах про Бэтмена?',//done9
 		answers: [
 			{ text: 'Лоис Лейн', correct: false },
 			{ text: 'Джим Гордон', correct: false },
@@ -550,9 +550,9 @@ const questions6 = [ //dc comics 2
 		question: 'Назовите имя оригинального Зеленого Фонаря?',//done10
 		answers: [
 			{ text: 'Барри Ален', correct: false },
-			{ text: 'Кал эл', correct: false },
+			{ text: 'Кал-Эл', correct: false },
 			{ text: 'Хэл Джордан', correct: true },
-			{ text: 'Джор эл', correct: false },
+			{ text: 'Джор-Эл', correct: false },
 		]
 	}
 ];
@@ -570,10 +570,10 @@ const questions7 = [ //marvel comics 1
 	{
 		question: 'Кто смог уничтожить всю вселенную Marvel в одиночку?',//done2
 		answers: [
-			{ text: 'Dardevil', correct: false },
-			{ text: 'Thor', correct: false },
-			{ text: 'Iron Man', correct: false },
-			{ text: 'Deadpool', correct: true },
+			{ text: 'Сорвиголова', correct: false },
+			{ text: 'Тор', correct: false },
+			{ text: 'Железный человек', correct: false },
+			{ text: 'Дедпул', correct: true },
 		]
 	},
 	{
@@ -663,8 +663,8 @@ const questions8 = [ //marvel comics 2
 	{
 		question: 'В каком комиксе состоялось первое появление Человека-Паука?',//done2
 		answers: [
-			{ text: 'Marvel comics #1', correct: false },
-			{ text: 'Action Comics #1', correct: false },
+			{ text: 'Marvel comics #10', correct: false },
+			{ text: 'Action Comics #4', correct: false },
 			{ text: 'Amazing Spider-man #1', correct: false },
 			{ text: 'Amazing Fantasy #15', correct: true },
 		]
@@ -720,7 +720,7 @@ const questions8 = [ //marvel comics 2
 			{ text: 'К номеру 42 серии комиксов Ultimate Spider-Man, где один из грабителей носил маску Бэтмена.', correct: true },
 			{ text: 'Ни к чему, оригинальная находка фильма', correct: false },
 			{ text: 'Ко второй части «Железного человека», где ребенок носил похожую маску супергероя. ', correct: false },
-			{ text: 'К номеру 649 серии комиксов The Amazing Spider-Man, где бандиты Кнгпина используют маски супергероев для ограбления лаборатории Horizon Labs', correct: false },
+			{ text: 'К номеру 649 серии комиксов The Amazing Spider-Man, где бандиты Кингпина используют маски супергероев для ограбления лаборатории Horizon Labs', correct: false },
 		]
 	},
 	{
@@ -758,7 +758,7 @@ const questions9 = [ //черепашки
 		answers: [
 			{ text: 'Бэтмэн', correct: true },
 			{ text: 'Человек-Паук', correct: false },
-			{ text: 'Супериен', correct: false },
+			{ text: 'Супермен', correct: false },
 			{ text: 'Халк', correct: false },
 		]
 	},
@@ -799,7 +799,7 @@ const questions9 = [ //черепашки
 		]
 	},
 	{
-		question: 'Какое Настоящие имя у Сплинтера из Черепашек Ниндзя',//done7
+		question: 'Какое настоящие имя у Сплинтера из Черепашек Ниндзя?',//done7
 		answers: [
 			{ text: 'Акиро Йоши', correct: false },
 			{ text: 'Хамато Йоши', correct: true },
@@ -887,8 +887,8 @@ const questions10 = [ //random
 		answers: [
 			{ text: 'Экспекто патронум', correct: false },
 			{ text: 'Accio', correct: false },
-			{ text: 'Авада Кедавра', correct: true },
-			{ text: 'Экспеллиармус', correct: false },
+			{ text: 'Авада Кедавра', correct: false },
+			{ text: 'Экспеллиармус', correct: true },
 		]
 	},
 	{
@@ -945,7 +945,7 @@ let score = 0;
 function startQuiz() {
 	currentQuestionIndex = 0;
 	score = 0;
-	nextButton.innerHTML = 'Next';
+	nextButton.innerHTML = 'Далее';
 	showQuestion();
 }
 
@@ -1010,8 +1010,8 @@ function selectAnswer(e) {
 
 function showScore() {
 	resetState();
-	questionElement.innerHTML = `You scored ${score} out of ${questions1.length}!`;
-	nextButton.innerHTML = 'Play Again';
+	questionElement.innerHTML = `Вы заработали ${score} баллов из ${questions1.length}!`;
+	nextButton.innerHTML = 'Играть снова';
 	nextButton.style.display = 'block';
 }
 

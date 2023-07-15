@@ -41,10 +41,10 @@ input{
   padding-top: 60px;
 }
 .app{
-  padding: 0px 50px 200px 50px;
+  padding: 0px 50px 50px 50px;
   border-radius: 6px;
   color: #fff;
-  max-height: 600px;
+  max-height: 71vh;
   overflow-y: auto;
 }
 .app::-webkit-scrollbar{
