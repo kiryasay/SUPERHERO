@@ -286,7 +286,7 @@ const questions5 = [ //dc comics 1
 		question: 'Кто из персонажей был членом, как "Мстителей", так и "Лиги Справедливости"?',//done4
 		answers: [
 			{ text: 'Супермен', correct: false },
-			{ text: 'Бэтемен', correct: false },
+			{ text: 'Бэтмен', correct: false },
 			{ text: 'Соколиный Глаз', correct: true },
 			{ text: 'Человек-Паук', correct: false },
 		]
