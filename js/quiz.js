@@ -30,7 +30,7 @@ const questions1 = [ //звёздные войны 1
 	{
 		question: 'Кто сделал C-3PO?',
 		answers: [
-			{ text: 'Неизвестно', correct: false },
+			{ text: 'Он был собран на дженозийской фабрике дроидов', correct: false },
 			{ text: 'Лея Органа', correct: false },
 			{ text: 'Люк Скайуокер', correct: false },
 			{ text: 'Энакин Скайуокер', correct: true },
@@ -57,7 +57,7 @@ const questions1 = [ //звёздные войны 1
 	{
 		question: 'Кто из перечисленных пережил приказ 66?',
 		answers: [
-			{ text: 'Луминара Ундули', correct: false },
+			{ text: 'Эйла Секура', correct: false },
 			{ text: 'Кит Фисто', correct: false },
 			{ text: 'Кэл Кестис', correct: true },
 			{ text: 'Пло Кун', correct: false },
@@ -93,25 +93,25 @@ const questions1 = [ //звёздные войны 1
 ];
 const questions2 = [ //звёздные войны 2
 	{
-		question: 'Кто был первым злодеем, с которым сталкивался Человек-паук?',
+		question: 'Как Эзра Бриджер получил свой первый световой меч?',
 		answers: [
-			{ text: 'Доктор Осьминог', correct: false },
-			{ text: 'Хамелеон', correct: true },
-			{ text: 'Носорог', correct: false },
-			{ text: 'Зелёный гоблин', correct: false },
+			{ text: 'Он купил его на рынке Лотала', correct: false },
+			{ text: 'Асока Тано подарила ему меч в качестве сувенира', correct: false },
+			{ text: 'Он украл его во время службы в Империи', correct: false },
+			{ text: 'Он собрал его из деталей, найденных экипажом "Призрака"', correct: true },
 		]
 	},
 	{
-		question: 'В какой серии комиксов впервые появился Человек-паук?',
+		question: 'Кем был Гранд-инквизитор до того как получил свой титул?',
 		answers: [
-			{ text: 'Amazing Fantasy', correct: true },
-			{ text: 'Friendly Neighborhood Spider-Man', correct: false },
-			{ text: 'Venom', correct: false },
-			{ text: 'Secret War', correct: false },
+			{ text: 'Стражником в Храме Джедаев', correct: true },
+			{ text: 'Он работал в секретном архиве на Корусанте', correct: false },
+			{ text: 'Мусорщиком на Татуине', correct: false },
+			{ text: 'Он был падаваном Императора Палпатина', correct: false },
 		]
 	},
 	{
-		question: 'В какой серии комиксов впервые появился Человек-паук?',
+		question: 'Где была Асока Тано, когда Палпатин отдал приказ 66?',
 		answers: [
 			{ text: 'Amazing Fantasy', correct: true },
 			{ text: 'Friendly Neighborhood Spider-Man', correct: false },
@@ -153,7 +153,7 @@ const questions3 = [ //аниме 1
 
 const questions4 = [ //аниме 2
 	{
-		question: 'Как Ванпанчмен обрёл свою силу?',
+		question: 'Абоба?',
 		answers: [
 			{ text: 'Украл силу у другого героя', correct: false },
 			{ text: 'Молился день и ночь', correct: false },
@@ -269,7 +269,7 @@ const questions7 = [ //marvel comics 1
 			{ text: 'Норман Озборн', correct: false },
 		]
 	},
-    {
+	{
 		question: 'Как Ник Фьюри в киновселенной Marvel потерял глаз?',//done4
 		answers: [
 			{ text: 'Во время битвы с Капитан Марвел', correct: false },
@@ -278,7 +278,7 @@ const questions7 = [ //marvel comics 1
 			{ text: 'На самом деле он прячет за повязкой здоровый глаз', correct: false },
 		]
 	},
-    {
+	{
 		question: 'Какой универститет закончил Тони Старк?',//done5
 		answers: [
 			{ text: 'M.I.T.', correct: true },
@@ -287,7 +287,7 @@ const questions7 = [ //marvel comics 1
 			{ text: 'Oxford', correct: false },
 		]
 	},
-    {
+	{
 		question: 'Кто скрывался за маской Совершенного Человека-Паука?',//done6
 		answers: [
 			{ text: 'Питер Паркер', correct: false },
@@ -296,7 +296,7 @@ const questions7 = [ //marvel comics 1
 			{ text: 'Майлз Моралес', correct: false },
 		]
 	},
-    {
+	{
 		question: 'Кем Веному приходится Карнаж?',//done7
 		answers: [
 			{ text: 'Дядей', correct: false },
@@ -305,7 +305,7 @@ const questions7 = [ //marvel comics 1
 			{ text: 'Сыном', correct: true },
 		]
 	},
-    {
+	{
 		question: 'Как называется молот Тора?',//done8
 		answers: [
 			{ text: 'Мьёльнир', correct: true },
@@ -314,7 +314,7 @@ const questions7 = [ //marvel comics 1
 			{ text: 'Разрушитель', correct: false },
 		]
 	},
-    {
+	{
 		question: 'Какие три предмета, по словам Рокетs, ему нужны, чтобы сбежать из тюрьмы, в фильме Стражи Галактики?',//done9
 		answers: [
 			{ text: 'Нож, провода кабеля и микстейп Питера', correct: false },
@@ -323,11 +323,11 @@ const questions7 = [ //marvel comics 1
 			{ text: 'Карта безопасности, вилка и голеностопный монитор', correct: false },
 		]
 	},
-    {
+	{
 		question: 'Сколько существует Камней Бесконечности?',//done10
 		answers: [
 			{ text: '7', correct: false },
-			{ text: '5', correct: false},
+			{ text: '5', correct: false },
 			{ text: '4', correct: false },
 			{ text: '6', correct: true },
 		]
@@ -362,7 +362,7 @@ const questions8 = [ //marvel comics 2
 			{ text: 'Рикошет', correct: false },
 		]
 	},
-    {
+	{
 		question: 'Кто такой Бен Рейли (Алый Паук)?',//done4
 		answers: [
 			{ text: 'Сводный брат Майлза Моралеса', correct: false },
@@ -371,7 +371,7 @@ const questions8 = [ //marvel comics 2
 			{ text: 'Отец Тони Старка', correct: false },
 		]
 	},
-    {
+	{
 		question: 'Какая была последняя фраза Гоблина (трилогия Сэма Рэйми)?',//done5
 		answers: [
 			{ text: 'Не говори Гарри', correct: true },
@@ -380,7 +380,7 @@ const questions8 = [ //marvel comics 2
 			{ text: 'Это я убил твоего дядю', correct: false },
 		]
 	},
-    {
+	{
 		question: 'Выбери вариант продолжения фразы Отто Октавиуса (трилогия Сэма Рэйми)?',//done6
 		answers: [
 			{ text: 'Интеллект это не привилегия а дар, и он не должен служить на благо!', correct: false },
@@ -389,7 +389,7 @@ const questions8 = [ //marvel comics 2
 			{ text: 'Интеллект это дар, и он должен служить на благо', correct: false },
 		]
 	},
-    {
+	{
 		question: 'Как зовут дочь Питера Паркера?',//done7
 		answers: [
 			{ text: 'Филиция', correct: false },
@@ -398,16 +398,16 @@ const questions8 = [ //marvel comics 2
 			{ text: 'Мэй ', correct: true },
 		]
 	},
-    {
+	{
 		question: 'В фильме «Человек-Паук: Возвращение домой» Паучок борется с бандой налетчиков в масках Мстителей. К чему отсылает эта сцена?',//done8
 		answers: [
 			{ text: 'К номеру 42 серии комиксов Ultimate Spider-Man, где один из грабителей носил маску Бэтмена.', correct: true },
 			{ text: 'Ни к чему, оригинальная находка фильма', correct: false },
 			{ text: 'Ко второй части «Железного человека», где ребенок носил похожую маску супергероя. ', correct: false },
-			{ text: 'К номеру 649 серии комиксов The Amazing Spider-Man, где бандиты Кнгпина используют маски супергероев для ограбления лаборатории Horizon Labs', correct: false},
+			{ text: 'К номеру 649 серии комиксов The Amazing Spider-Man, где бандиты Кнгпина используют маски супергероев для ограбления лаборатории Horizon Labs', correct: false },
 		]
 	},
-    {
+	{
 		question: 'Кто был первым злодеем, с которым сталкивался Человек-паук?',//done 9
 		answers: [
 			{ text: 'Доктор Осьминог', correct: false },
@@ -416,7 +416,7 @@ const questions8 = [ //marvel comics 2
 			{ text: 'Зелёный гоблин', correct: false },
 		]
 	},
-    {
+	{
 		question: 'Чью свадьбу остановил Человек-паук?',//done10
 		answers: [
 			{ text: 'Гвен Стейсти и Майла Моралеса', correct: false },
@@ -442,7 +442,7 @@ const questions9 = [ //черепашки
 		answers: [
 			{ text: 'Бэтмэн', correct: true },
 			{ text: 'Человек-Паук', correct: false },
-			{ text: 'Супериен', correct: false},
+			{ text: 'Супериен', correct: false },
 			{ text: 'Халк', correct: false },
 		]
 	},
@@ -455,7 +455,7 @@ const questions9 = [ //черепашки
 			{ text: 'В канализации', correct: true },
 		]
 	},
-    {
+	{
 		question: 'Из какого измерения прибыли Кренги во вселенной Черепашек Ниндзя?',//done4
 		answers: [
 			{ text: 'Измерение игрик', correct: false },
@@ -464,56 +464,56 @@ const questions9 = [ //черепашки
 			{ text: 'Альфа Центавра', correct: false },
 		]
 	},
-    {
+	{
 		question: 'Любимая еда Черепашек Ниндзя?',//done5
 		answers: [
 			{ text: 'Паста', correct: false },
-			{ text: 'Роллы', correct: false},
+			{ text: 'Роллы', correct: false },
 			{ text: 'Пицца', correct: true },
 			{ text: 'Бургеры', correct: false },
 		]
 	},
-    {
+	{
 		question: 'Как звали питомца Рафаэля из Черепашек Ниндзя?',//done6
 		answers: [
 			{ text: 'Спайк', correct: true },
-			{ text: 'Гайк', correct: false},
+			{ text: 'Гайк', correct: false },
 			{ text: 'Кожеголовый', correct: false },
 			{ text: 'Найк', correct: false },
 		]
 	},
-    {
+	{
 		question: 'Какое Настоящие имя у Сплинтера из Черепашек Ниндзя',//done7
 		answers: [
 			{ text: 'Акиро Йоши', correct: false },
-			{ text: 'Хамато Йоши', correct: true},
+			{ text: 'Хамато Йоши', correct: true },
 			{ text: 'Ороку Саки', correct: false },
 			{ text: 'Хамато Вива', correct: false },
 		]
 	},
-    {
+	{
 		question: 'Кто такой Шредер из Черепашек Ниндзя',//done8
 		answers: [
 			{ text: 'Человек', correct: true },
-			{ text: 'Мутант', correct: false},
+			{ text: 'Мутант', correct: false },
 			{ text: 'Пришелец', correct: false },
 			{ text: 'Робот', correct: false },
 		]
 	},
-    {
+	{
 		question: 'Любимая фраза Микеланджело из Черепашек Ниндзя',//done9
 		answers: [
 			{ text: 'Все вместе', correct: false },
-			{ text: 'Кей О', correct: false},
+			{ text: 'Кей О', correct: false },
 			{ text: 'Погнали', correct: false },
 			{ text: 'Буякаша', correct: true },
 		]
 	},
-    {
+	{
 		question: 'Какую фразу выкрикивают все Черепашки Ниндзя',//done10
 		answers: [
 			{ text: 'Аригато', correct: false },
-			{ text: 'Кавабанга', correct: true},
+			{ text: 'Кавабанга', correct: true },
 			{ text: 'Погнали', correct: false },
 			{ text: 'Сайонара', correct: false },
 		]
