@@ -631,7 +631,7 @@ const questions7 = [ //marvel comics 1
 		]
 	},
 	{
-		question: 'Какие три предмета, по словам Рокеты, ему нужны, чтобы сбежать из тюрьмы, в фильме Стражи Галактики?',//done9
+		question: 'Какие три предмета, по словам Ракеты, ему нужны, чтобы сбежать из тюрьмы, в фильме Стражи Галактики?',//done9
 		answers: [
 			{ text: 'Нож, провода кабеля и микстейп Питера', correct: false },
 			{ text: 'Защитная карта, батарея и протез ноги', correct: true },
@@ -733,7 +733,7 @@ const questions8 = [ //marvel comics 2
 		]
 	},
 	{
-		question: 'Чью свадьбу остановил Человек-паук?',//done10
+		question: 'Чью свадьбу остановил Человек-паук в серии комиксов "Amazing Spider-Man"?',//done10
 		answers: [
 			{ text: 'Гвен Стейсти и Майла Моралеса', correct: false },
 			{ text: 'Тони Старка и Пеппер Потс', correct: false },
@@ -745,7 +745,7 @@ const questions8 = [ //marvel comics 2
 
 const questions9 = [ //черепашки
 	{
-		question: 'В честь кого названы Черепаки Ниндзя?',//done1
+		question: 'В честь кого названы Черепашки Ниндзя?',//done1
 		answers: [
 			{ text: 'Самураев', correct: false },
 			{ text: 'Ученых которые создали мутаген', correct: false },
