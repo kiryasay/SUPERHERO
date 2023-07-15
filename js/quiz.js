@@ -223,42 +223,114 @@ const questions3 = [ //аниме 1
 		]
 	},
 	{
-		question: 'Какой ранг получил Сайтама после теста в 1 сезоне?',
+		question: 'Где находился Гоку, когда он впервые превращался в Супер Сайяна?',
 		answers: [
-			{ text: 'Класс C', correct: true },
-			{ text: 'Класс A', correct: false },
-			{ text: 'Класс B', correct: false },
-			{ text: 'Класс C', correct: false },
+			{ text: 'Планета Намек', correct: false },
+			{ text: 'Планета Земля', correct: false },
+			{ text: 'Планета Веджета', correct: true },
+			{ text: 'Планета Кайшин', correct: false },
+		]
+	},
+	{
+		question: 'Кем был Сайтама до того, как он стал героем?',
+		answers: [
+			{ text: 'Учеником старшей школы', correct: false },
+			{ text: 'Бизнесменом', correct: true },
+			{ text: 'Доставщиком еды', correct: false },
+			{ text: 'Профессиональным атлетом', correct: false },
+		]
+	},
+	{
+		question: 'Как звали альтернативную версию Наруто в фильме "Наруто Фильм: Путь Ниндзя"?',
+		answers: [
+			{ text: 'Курама', correct: false },
+			{ text: 'Саске', correct: false },
+			{ text: 'Минато', correct: false },
+			{ text: 'Менма', correct: true },
+		]
+	},
+	{
+		question: 'Кто сделал из Геноса киборга?',
+		answers: [
+			{ text: 'Доктор Генус', correct: false },
+			{ text: 'Доктор Кусено', correct: true },
+			{ text: 'Доктор Вайли', correct: false },
+			{ text: 'Доктор Фукегао', correct: false },
+		]
+	},
+	{
+		question: 'В какую игру на консоли играл Кинг в аниме Ванпанчмен?',
+		answers: [
+			{ text: 'Супер Битва', correct: false },
+			{ text: 'Милая милашка', correct: false },
+			{ text: 'Сёстры Доки Доки', correct: true },
+			{ text: 'Идеальное свидание', correct: false },
+		]
+	},
+	{
+		question: 'Кто был четвёртым хокаге?',
+		answers: [
+			{ text: 'Минато Намиказе', correct: true },
+			{ text: 'Цунаде', correct: false },
+			{ text: 'Хирузен Сарутоби', correct: false },
+			{ text: 'Какаши Хатаке ', correct: false },
 		]
 	}
 ];
 
 const questions4 = [ //аниме 2
 	{
-		question: 'Абоба?',
+		question: 'Самый кассовый аниме фильм?',
 		answers: [
-			{ text: 'Украл силу у другого героя', correct: false },
-			{ text: 'Молился день и ночь', correct: false },
-			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
-			{ text: 'Неизвестно', correct: false },
+			{ text: 'Твоё имя', correct: false },
+			{ text: 'Истребитель демонов: Поезд «Бесконечный»', correct: true },
+			{ text: 'Унесённые призраками', correct: false },
+			{ text: 'Судзумэ, закрывающая двери	', correct: false },
 		]
 	},
 	{
-		question: 'Как Ванпанчмен обрёл свою силу?',
+		question: 'Борос (из Ванпанчмена) - лидер какой группы?',
 		answers: [
-			{ text: 'Украл силу у другого героя', correct: false },
-			{ text: 'Молился день и ночь', correct: false },
-			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
-			{ text: 'Неизвестно', correct: false },
+			{ text: 'Пришельцев завоевателей', correct: false },
+			{ text: 'Ассоциации монстров', correct: false },
+			{ text: 'Похитителей темной материи', correct: true },
+			{ text: 'Альянса черной материи	', correct: false },
 		]
 	},
 	{
-		question: 'Как Ванпанчмен обрёл свою силу?',
+		question: 'Какой класс получил Генос после прохождения теста в 1 сезоне аниме ванпанчмен?',
 		answers: [
-			{ text: 'Украл силу у другого героя', correct: false },
-			{ text: 'Молился день и ночь', correct: false },
-			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
-			{ text: 'Неизвестно', correct: false },
+			{ text: 'S', correct: true },
+			{ text: 'A', correct: false },
+			{ text: 'C', correct: false },
+			{ text: 'B', correct: false },
+		]
+	},
+	{
+		question: 'Во время битвы с Боросом Сайтама долетает до ...?',
+		answers: [
+			{ text: 'Америки', correct: false },
+			{ text: 'Марса', correct: false },
+			{ text: 'Луны', correct: true },
+			{ text: 'Солнца', correct: false },
+		]
+	},
+	{
+		question: 'Почему Саске ушёл из деревни?',
+		answers: [
+			{ text: 'Чтобы стать сильнее Наруто', correct: false },
+			{ text: 'Чтобы стать сильнее и убить Итачи', correct: true },
+			{ text: 'Он хотел найти остальных выживших клана Учиха', correct: false },
+			{ text: 'Ему не нравилось в Конохе', correct: false },
+		]
+	},
+	{
+		question: 'Почему Саске ушёл из деревни?',
+		answers: [
+			{ text: 'Чтобы стать сильнее Наруто', correct: false },
+			{ text: 'Чтобы стать сильнее и убить Итачи', correct: true },
+			{ text: 'Он хотел найти остальных выживших клана Учиха', correct: false },
+			{ text: 'Ему не нравилось в Конохе', correct: false },
 		]
 	}
 ];
