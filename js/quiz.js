@@ -91,6 +91,7 @@ const questions1 = [ //звёздные войны 1
 		]
 	}
 ];
+
 const questions2 = [ //звёздные войны 2
 	{
 		question: 'Как Эзра Бриджер получил свой первый световой меч?',
@@ -191,25 +192,34 @@ const questions3 = [ //аниме 1
 			{ text: 'Украл силу у другого героя', correct: false },
 			{ text: 'Молился день и ночь', correct: false },
 			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
-			{ text: 'Неизвестно', correct: false },
+			{ text: 'Он заключил контракт с демоном', correct: false },
 		]
 	},
 	{
-		question: 'Как Ванпанчмен обрёл свою силу?',
+		question: 'Наруто - представитель какого клана?',
 		answers: [
-			{ text: 'Украл силу у другого героя', correct: false },
-			{ text: 'Молился день и ночь', correct: false },
-			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
-			{ text: 'Неизвестно', correct: false },
+			{ text: 'Учиха', correct: false },
+			{ text: 'Узумаки', correct: true },
+			{ text: 'Инузука', correct: false },
+			{ text: 'Сарутоби', correct: false },
 		]
 	},
 	{
-		question: 'Как Ванпанчмен обрёл свою силу?',
+		question: 'Когда Наруто получил ранг Чунина?',
 		answers: [
-			{ text: 'Украл силу у другого героя', correct: false },
-			{ text: 'Молился день и ночь', correct: false },
-			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
-			{ text: 'Неизвестно', correct: false },
+			{ text: 'После мировой войны шиноби', correct: false },
+			{ text: 'Во время тренировок с Джирайей, до начала войны', correct: false },
+			{ text: 'В начале мировой войны шиноби', correct: false },
+			{ text: 'Он никогда не был чунином', correct: true },
+		]
+	},
+	{
+		question: 'Какой ранг получил Сайтама после теста в 1 сезоне?',
+		answers: [
+			{ text: 'Класс C', correct: true },
+			{ text: 'Класс A', correct: false },
+			{ text: 'Класс B', correct: false },
+			{ text: 'Класс C', correct: false },
 		]
 	}
 ];
