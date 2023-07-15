@@ -183,62 +183,188 @@ const questions4 = [ //аниме 2
 
 const questions5 = [ //dc comics 1
 	{
-		question: 'Как Ванпанчмен обрёл свою силу?',
+		question: 'C кем из персонажей Marvel в первом кроссовере издателей сражался Супермен?',//done1
 		answers: [
-			{ text: 'Украл силу у другого героя', correct: false },
-			{ text: 'Молился день и ночь', correct: false },
-			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
-			{ text: 'Неизвестно', correct: false },
+			{ text: 'Веном', correct: false },
+			{ text: 'Халк', correct: false },
+			{ text: 'Железный Человек', correct: false },
+			{ text: 'Человек-Паук', correct: true },
 		]
 	},
 	{
-		question: 'Как Ванпанчмен обрёл свою силу?',
+		question: 'Имя настоящего отца Супермена?',//done2
 		answers: [
-			{ text: 'Украл силу у другого героя', correct: false },
-			{ text: 'Молился день и ночь', correct: false },
-			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
-			{ text: 'Неизвестно', correct: false },
+			{ text: 'Джон-эл', correct: false },
+			{ text: 'Джон-эл', correct: false },
+			{ text: 'Джор-Эл', correct: true },
+			{ text: 'Карл-эл', correct: false },
 		]
 	},
 	{
-		question: 'Как Ванпанчмен обрёл свою силу?',
+		question: 'Кто носил мантию Робина, и кого убил Джокер в арке "Смерть в Семье"?',//done3
 		answers: [
-			{ text: 'Украл силу у другого героя', correct: false },
-			{ text: 'Молился день и ночь', correct: false },
-			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
-			{ text: 'Неизвестно', correct: false },
+			{ text: 'Джейсон Тодд', correct: true },
+			{ text: 'Дик Грейсон', correct: false },
+			{ text: 'Дэмиан Уэйе', correct: false },
+			{ text: 'Тим Дрейк', correct: false },
 		]
-	}
+	},
+	{
+		question: 'Кто из персонажей был членом, как "Мстителей", так и "Лиги Справедливости"?',//done4
+		answers: [
+			{ text: 'Супермен', correct: false },
+			{ text: 'Бэтемен', correct: false },
+			{ text: 'Соколиный Глаз', correct: true },
+			{ text: 'Человек-Паук', correct: false },
+		]
+	},
+	{
+		question: 'Кличка пса Супермена?',//done5
+		answers: [
+			{ text: 'Плуто', correct: false },
+			{ text: 'Крипто', correct: true },
+			{ text: 'Супер', correct: false },
+			{ text: 'Брюс', correct: false },
+		]
+	},
+	{
+		question: 'К какому цвету Зеленый Фонарь испытывает слабость?',//done6
+		answers: [
+			{ text: 'Черный', correct: false },
+			{ text: 'Голубой', correct: false },
+			{ text: 'Красный', correct: false },
+			{ text: 'Желтый', correct: true },
+		]
+	},
+	{
+		question: 'Где Барри Аллен хранит свой костюм Флэша?',//done7
+		answers: [
+			{ text: 'Под одеждой', correct: false },
+			{ text: 'В ботинках', correct: false },
+			{ text: 'В кольце', correct: true },
+			{ text: 'Дома', correct: false },
+		]
+	},
+	{
+		question: 'От какого издания произошло сокращение в названии DC Comics?',//done8
+		answers: [
+			{ text: 'Detective Comics', correct: true },
+			{ text: 'Dark Comisc', correct: false },
+			{ text: 'Doolitle Comics', correct: false },
+			{ text: 'Dangerous Comics', correct: false },
+		]
+	},
+	{
+		question: 'Кто носит имя - Оракул в комиксах про Бэтмена?',//done9
+		answers: [
+			{ text: 'Лоис Лейн', correct: false },
+			{ text: 'Джим Гордон', correct: false },
+			{ text: 'Брюс Уейн', correct: false },
+			{ text: 'Барбара Гордон', correct: true },
+		]
+	},
+	{
+		question: 'Кто является лидером команды "Юные Титаны"?',//done10
+		answers: [
+			{ text: 'Бэтмен', correct: false },
+			{ text: 'Робин', correct: true },
+			{ text: 'Киборг', correct: false },
+			{ text: 'Флэш', correct: false },
+		]
+	},
 ];
 
 const questions6 = [ //dc comics 2
 	{
-		question: 'Как Ванпанчмен обрёл свою силу?',
+		question: 'Какой злодей скрывается за именем Эдвард Нигма?',//done1
 		answers: [
-			{ text: 'Украл силу у другого героя', correct: false },
-			{ text: 'Молился день и ночь', correct: false },
-			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
-			{ text: 'Неизвестно', correct: false },
+			{ text: 'Джокер', correct: false },
+			{ text: 'Мистер Фриз', correct: false },
+			{ text: 'Убийца Крок', correct: false },
+			{ text: 'Загадочник', correct: true },
 		]
 	},
 	{
-		question: 'Как Ванпанчмен обрёл свою силу?',
+		question: 'Какой персонаж DC Comics первоначально не планировался в комиксах более одного раза?',//done2
 		answers: [
-			{ text: 'Украл силу у другого героя', correct: false },
-			{ text: 'Молился день и ночь', correct: false },
-			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
-			{ text: 'Неизвестно', correct: false },
+			{ text: 'Бэтмен', correct: false },
+			{ text: 'Супермен', correct: false },
+			{ text: 'Джокер', correct: true },
+			{ text: 'Загадочник', correct: false },
 		]
 	},
 	{
-		question: 'Как Ванпанчмен обрёл свою силу?',
+		question: 'Кто является дворецким Бэтмена?',//done3
 		answers: [
-			{ text: 'Украл силу у другого героя', correct: false },
-			{ text: 'Молился день и ночь', correct: false },
-			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
-			{ text: 'Неизвестно', correct: false },
+			{ text: 'Альфред Уйен', correct: false },
+			{ text: 'Альфред Пенниуорт', correct: true },
+			{ text: 'Дик Грейсон', correct: false },
+			{ text: 'Демиан Уейн', correct: false },
 		]
-	}
+	},
+	{
+		question: 'Где родился Супермен?',//done4
+		answers: [
+			{ text: 'Криптон', correct: true },
+			{ text: 'Квинс', correct: false },
+			{ text: 'Марс', correct: false },
+			{ text: 'Плутон', correct: false },
+		]
+	},
+	{
+		question: 'Где родился Супермен?',//done5
+		answers: [
+			{ text: 'Криптон', correct: true },
+			{ text: 'Квинс', correct: false },
+			{ text: 'Марс', correct: false },
+			{ text: 'Плутон', correct: false },
+		]
+	},
+	{
+		question: 'Кто скрывается за именем Двуликий?',//done6
+		answers: [
+			{ text: 'Хэл Джордан', correct: false },
+			{ text: 'Барри Ален', correct: false },
+			{ text: 'Харви Дент', correct: true },
+			{ text: 'Брюс Уейн', correct: false },
+		]
+	},
+	{
+		question: 'Что означает на криптонианском логотип Супермена?',//done7
+		answers: [
+			{ text: 'Гармония', correct: false },
+			{ text: 'Сила', correct: false },
+			{ text: 'Справедливость', correct: false },
+			{ text: 'Надежда', correct: true },
+		]
+	},
+	{
+		question: 'Кому удалось убить Супермена в арке "Смерть Супермена"?',//done8
+		answers: [
+			{ text: 'Думсдэй', correct: true },
+			{ text: 'Дарксайд', correct: false },
+			{ text: 'Бэтмен', correct: false },
+			{ text: 'Лекс Лютор', correct: false },
+		]
+	},
+	{
+		question: 'Какой персонаж DC Comics появлялся во Вселенной чаще всего за историю издательства?',//done9
+		answers: [
+			{ text: 'Флэш', correct: false },
+			{ text: 'Аквамен', correct: false },
+			{ text: 'Бэтмен', correct: true },
+			{ text: 'Супермен', correct: false },
+		]
+	},
+	{
+		question: 'Назовите имя оригинального Зеленого Фонаря?',//done10
+		answers: [
+			{ text: 'Барри Ален', correct: false },
+			{ text: 'Кал эл', correct: false },
+			{ text: 'Хэл Джордан', correct: true },
+			{ text: 'Джор эл', correct: false },
+		]
+	},
 ];
 
 const questions7 = [ //marvel comics 1
@@ -522,32 +648,95 @@ const questions9 = [ //черепашки
 
 const questions10 = [ //random
 	{
-		question: 'Как Ванпанчмен обрёл свою силу?',
+		question: 'Кто придумал идею фильом об Индиане Джонсе?',//done1
 		answers: [
-			{ text: 'Украл силу у другого героя', correct: false },
-			{ text: 'Молился день и ночь', correct: false },
-			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
-			{ text: 'Неизвестно', correct: false },
+			{ text: 'Гильермо Дель Торо', correct: false },
+			{ text: 'Стивен Спилберг', correct: false },
+			{ text: 'Джордж Лукас', correct: true },
+			{ text: 'Дэвид Линч', correct: false },
 		]
 	},
 	{
-		question: 'Как Ванпанчмен обрёл свою силу?',
+		question: 'Какое настоящее имя Индианы Джонса?',//done2
 		answers: [
-			{ text: 'Украл силу у другого героя', correct: false },
-			{ text: 'Молился день и ночь', correct: false },
-			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
-			{ text: 'Неизвестно', correct: false },
+			{ text: 'Генри', correct: true },
+			{ text: 'Индиана', correct: false },
+			{ text: 'Анри', correct: false},
+			{ text: 'Абнер', correct: false },
 		]
 	},
 	{
-		question: 'Как Ванпанчмен обрёл свою силу?',
+		question: 'Какое имя нельзя произносить?',//done3
 		answers: [
-			{ text: 'Украл силу у другого героя', correct: false },
-			{ text: 'Молился день и ночь', correct: false },
-			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
-			{ text: 'Неизвестно', correct: false },
+			{ text: 'Альбус Дамблдор', correct: false },
+			{ text: 'Гарри Поттер', correct: false },
+			{ text: 'Волан-де-Морт', correct: true },
+			{ text: 'Рон Уизли', correct: false },
 		]
-	}
+	},
+	{
+		question: 'Какой патронус у Гарри Поттера?',//done4
+		answers: [
+			{ text: 'Лось', correct: false },
+			{ text: 'Персидский Кот', correct: false },
+			{ text: 'Лань', correct: false },
+			{ text: 'Олень', correct: true },
+		]
+	},
+	{
+		question: 'Какой из волшебников чистокровный?',//done5
+		answers: [
+			{ text: 'Невил Долгопупс', correct: true },
+			{ text: 'Волан-де-Морт', correct: false },
+			{ text: 'Альбус Дамблдор', correct: false },
+			{ text: 'Римус Люпин', correct: false },
+		]
+	},
+	{
+		question: 'Какое заклинание использовал Гарри, чтобы убить лорда Волан-де-Морта?',//done6
+		answers: [
+			{ text: 'Экспекто патронум', correct: false },
+			{ text: 'Accio', correct: false },
+			{ text: 'Авада Кедавра', correct: true },
+			{ text: 'Экспеллиармус', correct: false },
+		]
+	},
+	{
+		question: 'Настоящее имя Волан-де-Морта?',//done7
+		answers: [
+			{ text: 'Альбус Дамблдор', correct: false },
+			{ text: 'Том Рэдл', correct: true },
+			{ text: 'Сиверус Снейп', correct: false },
+			{ text: 'Том Поттер', correct: false },
+		]
+	},
+	{
+		question: 'Какое зелье приносит удачу тому, кто его выпьет?',//done8
+		answers: [
+			{ text: 'Оборотное зелье', correct: false },
+			{ text: 'Парацетамол', correct: false },
+			{ text: 'Амортенция', correct: false },
+			{ text: 'Феликс Фелицис', correct: true },
+		]
+	},
+	{
+		question: 'Сколько игроков в команде по квиддичу?',//done9
+		answers: [
+			{ text: '6', correct: false },
+			{ text: '7', correct: true },
+			{ text: '8', correct: false },
+			{ text: '5', correct: false },
+		]
+	},
+	{
+		question: 'Что за волшебное существо Арагог?',//done10
+		answers: [
+			{ text: 'Гигантский паук-акромантул. ', correct: true },
+			{ text: 'Василиск', correct: false },
+			{ text: 'Грифон', correct: false },
+			{ text: 'Оборотень', correct: false },
+		]
+	},
 ];
 
 function randomInteger(min, max) {
