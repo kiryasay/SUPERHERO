@@ -91,6 +91,7 @@ const questions1 = [ //звёздные войны 1
 		]
 	}
 ];
+
 const questions2 = [ //звёздные войны 2
 	{
 		question: 'Как Эзра Бриджер получил свой первый световой меч?',
@@ -111,12 +112,75 @@ const questions2 = [ //звёздные войны 2
 		]
 	},
 	{
+		question: 'Кто был учителем Квай-Гон Джинна?',
+		answers: [
+			{ text: 'Ки-Ади-Мунди', correct: false },
+			{ text: 'Йода', correct: false },
+			{ text: 'Мейс Винду', correct: false },
+			{ text: 'Дуку', correct: true },
+		]
+	},
+	{
 		question: 'Где была Асока Тано, когда Палпатин отдал приказ 66?',
 		answers: [
-			{ text: 'Amazing Fantasy', correct: true },
-			{ text: 'Friendly Neighborhood Spider-Man', correct: false },
-			{ text: 'Venom', correct: false },
-			{ text: 'Secret War', correct: false },
+			{ text: 'На Мандалоре', correct: false },
+			{ text: 'На республиканском звёздном разрушителе типа "Венатор"', correct: true },
+			{ text: 'На руспубликанском фригате', correct: false },
+			{ text: 'На Корусанте', correct: false },
+		]
+	},
+	{
+		question: 'Как погиб Дарт Мол?',
+		answers: [
+			{ text: 'Асока победила его в дуэли на Мандалоре', correct: false },
+			{ text: 'Оби-ван победил его в дуэли на Набу', correct: false },
+			{ text: 'Оби-ван победил его в дуэли на Татуине', correct: true },
+			{ text: 'Его съел Сарлакк', correct: false },
+		]
+	},
+	{
+		question: 'Сколько языков знает C-3PO?',
+		answers: [
+			{ text: '7 000 000', correct: true },
+			{ text: '6 000 000', correct: false },
+			{ text: '6 465 765', correct: false },
+			{ text: '9 620 342', correct: false },
+		]
+	},
+	{
+		question: 'На какой планете Гален Эрсо и его семья прятались от Империи?',
+		answers: [
+			{ text: 'Вобани', correct: false },
+			{ text: 'Явин IV', correct: false },
+			{ text: 'Иду', correct: false },
+			{ text: 'Ла\'му', correct: true },
+		]
+	},
+	{
+		question: 'На какой планете находится замок Дарта Вейдера?',
+		answers: [
+			{ text: 'Мустафар', correct: true },
+			{ text: 'Мортис', correct: false },
+			{ text: 'Набу', correct: false },
+			{ text: 'Эндор', correct: false },
+		]
+	},
+	{
+		question: 'Почему у Мейса Винду фиолетовый световой меч?',
+		answers: [
+			{ text: 'На съёмочной площадке не осталось мечей другого цвета', correct: false },
+			{ text: 'Это остаётся в тайне', correct: false },
+			{ text: 'Это была задумка Джорджа Лукаса (режиссера фильма)', correct: false },
+			{ text: 'Такой цвет клинка выбрал актёр, игравший персонажа (Сэмюэл Л. Джексон)', correct: true },
+		]
+	},
+	{
+		question: 'Кто из клонов первым узнал о приказе 66? (до его объявления)',
+		answers: [
+			{ text: 'CT-5555, также известный как "Файвс"', correct: true },
+			{ text: 'КС-7567, также известный как "Капитан Рекс", командир 501 легиона', correct: false },
+			{ text: 'Никто из клонов не знал об этом', correct: false },
+			{ text: 'КК-4142, также известный как "Лок"', correct: false },
 		]
 	}
 ];
@@ -128,25 +192,34 @@ const questions3 = [ //аниме 1
 			{ text: 'Украл силу у другого героя', correct: false },
 			{ text: 'Молился день и ночь', correct: false },
 			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
-			{ text: 'Неизвестно', correct: false },
+			{ text: 'Он заключил контракт с демоном', correct: false },
 		]
 	},
 	{
-		question: 'Как Ванпанчмен обрёл свою силу?',
+		question: 'Наруто - представитель какого клана?',
 		answers: [
-			{ text: 'Украл силу у другого героя', correct: false },
-			{ text: 'Молился день и ночь', correct: false },
-			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
-			{ text: 'Неизвестно', correct: false },
+			{ text: 'Учиха', correct: false },
+			{ text: 'Узумаки', correct: true },
+			{ text: 'Инузука', correct: false },
+			{ text: 'Сарутоби', correct: false },
 		]
 	},
 	{
-		question: 'Как Ванпанчмен обрёл свою силу?',
+		question: 'Когда Наруто получил ранг Чунина?',
 		answers: [
-			{ text: 'Украл силу у другого героя', correct: false },
-			{ text: 'Молился день и ночь', correct: false },
-			{ text: 'Он прошёл через множество изнурительных тренировок', correct: true },
-			{ text: 'Неизвестно', correct: false },
+			{ text: 'После мировой войны шиноби', correct: false },
+			{ text: 'Во время тренировок с Джирайей, до начала войны', correct: false },
+			{ text: 'В начале мировой войны шиноби', correct: false },
+			{ text: 'Он никогда не был чунином', correct: true },
+		]
+	},
+	{
+		question: 'Какой ранг получил Сайтама после теста в 1 сезоне?',
+		answers: [
+			{ text: 'Класс C', correct: true },
+			{ text: 'Класс A', correct: false },
+			{ text: 'Класс B', correct: false },
+			{ text: 'Класс C', correct: false },
 		]
 	}
 ];
