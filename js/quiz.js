@@ -394,12 +394,12 @@ const questions6 = [ //dc comics 2
 		]
 	},
 	{
-		question: 'Где родился Супермен?',//done5
+		question: 'Кем Харли Квинн была до того, как стала суперзлодейкой и подружкой Джокера?',//done5
 		answers: [
-			{ text: 'Криптон', correct: true },
-			{ text: 'Квинс', correct: false },
-			{ text: 'Марс', correct: false },
-			{ text: 'Плутон', correct: false },
+			{ text: 'Воровкой', correct: false },
+			{ text: 'Актрисой', correct: false },
+			{ text: 'Гимнасткой', correct: false },
+			{ text: 'Психиатором', correct: true },
 		]
 	},
 	{
@@ -730,7 +730,7 @@ const questions9 = [ //черепашки
 
 const questions10 = [ //random
 	{
-		question: 'Кто придумал идею фильом об Индиане Джонсе?',//done1
+		question: 'Кто придумал идею фильмов об Индиане Джонсе?',//done1
 		answers: [
 			{ text: 'Гильермо Дель Торо', correct: false },
 			{ text: 'Стивен Спилберг', correct: false },
