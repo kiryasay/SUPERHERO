@@ -187,6 +187,67 @@ section
     letter-spacing: 2px;
 }
 
+@media (width < 1400px){
+    .welcome-text{
+        padding-top: 10px;
+    }
+    .become-text{
+        font-size: 34px;
+    }
+    .underbecome-text{
+        17px
+    }
+    .cards_block{
+        margin-top: 20px;
+        margin-left: 30px;
+        gap: 35px;
+        height: auto;
+    }
+    .cards_block .card{
+        width: 175px;
+        height: 175px;
+    }
+    .cards_block .card-marvel-bg .card_img{
+        width: 137px;
+        height: 55px;
+    }
+    .cards_block .card-dc-bg .card_img{
+        width: 100px;
+        height: 100px;
+    }
+    .cards_block .card-sw-bg .card_img{
+        width: 165px;
+        height: 165px;
+    }
+    .cards_block .card-tmnt-bg .card_img{
+        width: 145px;
+        height: 52px;
+    }
+    .cards_block .card .card-anime-logo{
+        margin-top: 16px;
+    }
+    .cards_block .card-anime-bg .card_img{
+        width: 145px;
+        height: 56px;
+    }
+    .cards_block .card:hover .card_img{
+        transform:
+            scale(1.05)
+            translateY(-0.2rem);
+    }
+    .cards-text{
+        left: 745px;
+        bottom: 374px;
+
+        max-width: 289px;
+        height: 370px;
+        font-size: 21px;
+    }
+    .cards-text .heroes-text span{
+        letter-spacing: 1px;
+    }
+}
+
 /* .wrap { стили для карточек
     position: absolute;
     width: 225px;
