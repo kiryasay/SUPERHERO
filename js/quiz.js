@@ -721,7 +721,7 @@ const questions9 = [ //черепашки
 
 const questions10 = [ //random
 	{
-		question: 'Кто придумал идею фильом об Индиане Джонсе?',//done1
+		question: 'Кто придумал идею фильмов об Индиане Джонсе?',//done1
 		answers: [
 			{ text: 'Гильермо Дель Торо', correct: false },
 			{ text: 'Стивен Спилберг', correct: false },
