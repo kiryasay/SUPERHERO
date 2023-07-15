@@ -221,6 +221,15 @@ const questions3 = [ //аниме 1
 			{ text: 'Класс B', correct: false },
 			{ text: 'Класс C', correct: false },
 		]
+	},
+	{
+		question: 'Какой ранг получил Сайтама после теста в 1 сезоне?',
+		answers: [
+			{ text: 'Класс C', correct: true },
+			{ text: 'Класс A', correct: false },
+			{ text: 'Класс B', correct: false },
+			{ text: 'Класс C', correct: false },
+		]
 	}
 ];
 
@@ -286,7 +295,7 @@ const questions5 = [ //dc comics 1
 		question: 'Кто из персонажей был членом, как "Мстителей", так и "Лиги Справедливости"?',//done4
 		answers: [
 			{ text: 'Супермен', correct: false },
-			{ text: 'Бэтмен', correct: false },
+			{ text: 'Бэтемен', correct: false },
 			{ text: 'Соколиный Глаз', correct: true },
 			{ text: 'Человек-Паук', correct: false },
 		]
@@ -734,7 +743,7 @@ const questions10 = [ //random
 		answers: [
 			{ text: 'Генри', correct: true },
 			{ text: 'Индиана', correct: false },
-			{ text: 'Анри', correct: false},
+			{ text: 'Анри', correct: false },
 			{ text: 'Абнер', correct: false },
 		]
 	},
