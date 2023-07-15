@@ -325,12 +325,48 @@ const questions4 = [ //аниме 2
 		]
 	},
 	{
-		question: 'Почему Саске ушёл из деревни?',
+		question: 'Кому Наруто подарил свой первый поцелуй?',
 		answers: [
-			{ text: 'Чтобы стать сильнее Наруто', correct: false },
-			{ text: 'Чтобы стать сильнее и убить Итачи', correct: true },
-			{ text: 'Он хотел найти остальных выживших клана Учиха', correct: false },
-			{ text: 'Ему не нравилось в Конохе', correct: false },
+			{ text: 'Какаши', correct: false },
+			{ text: 'Сакуре', correct: false },
+			{ text: 'Хинате', correct: false },
+			{ text: 'Саске', correct: true },
+		]
+	},
+	{
+		question: 'Кто подарил Какаши шаринган?',
+		answers: [
+			{ text: 'Обито', correct: true },
+			{ text: 'Саске', correct: false },
+			{ text: 'Итачи', correct: false },
+			{ text: 'Шисуи', correct: false },
+		]
+	},
+	{
+		question: 'Как звали девятихвостого?',
+		answers: [
+			{ text: 'Сайкен', correct: false },
+			{ text: 'Шукаку', correct: false },
+			{ text: 'Курама', correct: true },
+			{ text: 'Гьюки', correct: false },
+		]
+	},
+	{
+		question: 'Кто был автором любимой серии книг Какаши?',
+		answers: [
+			{ text: 'Джирайя', correct: true },
+			{ text: 'Цунаде', correct: false },
+			{ text: 'Хирузен Сарутоби', correct: false },
+			{ text: 'Хаяо Миядзаки', correct: false },
+		]
+	},
+	{
+		question: 'Кто заменил Саске в команде 7?',
+		answers: [
+			{ text: 'Шибо', correct: false },
+			{ text: 'Сай', correct: true },
+			{ text: 'Хината', correct: false },
+			{ text: 'Рок Ли', correct: false },
 		]
 	}
 ];
@@ -425,7 +461,7 @@ const questions5 = [ //dc comics 1
 			{ text: 'Киборг', correct: false },
 			{ text: 'Флэш', correct: false },
 		]
-	},
+	}
 ];
 
 const questions6 = [ //dc comics 2
@@ -518,7 +554,7 @@ const questions6 = [ //dc comics 2
 			{ text: 'Хэл Джордан', correct: true },
 			{ text: 'Джор эл', correct: false },
 		]
-	},
+	}
 ];
 
 const questions7 = [ //marvel comics 1
@@ -611,7 +647,7 @@ const questions7 = [ //marvel comics 1
 			{ text: '4', correct: false },
 			{ text: '6', correct: true },
 		]
-	},
+	}
 ];
 
 const questions8 = [ //marvel comics 2
@@ -704,7 +740,7 @@ const questions8 = [ //marvel comics 2
 			{ text: 'Тети Мей и Доктора Осьминога', correct: true },
 			{ text: 'Мери Джейн и Флеша Томпсона', correct: false },
 		]
-	},
+	}
 ];
 
 const questions9 = [ //черепашки
@@ -797,7 +833,7 @@ const questions9 = [ //черепашки
 			{ text: 'Погнали', correct: false },
 			{ text: 'Сайонара', correct: false },
 		]
-	},
+	}
 ];
 
 const questions10 = [ //random
@@ -890,7 +926,7 @@ const questions10 = [ //random
 			{ text: 'Грифон', correct: false },
 			{ text: 'Оборотень', correct: false },
 		]
-	},
+	}
 ];
 
 function randomInteger(min, max) {
@@ -898,7 +934,6 @@ function randomInteger(min, max) {
 	let rand = min - 0.5 + Math.random() * (max - min + 1);
 	return Math.round(rand);
 }
-
 
 const questionElement = document.getElementById('question');
 const answerButtons = document.getElementById('answer-buttons');
