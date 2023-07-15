@@ -268,7 +268,7 @@ const questions5 = [ //dc comics 1
 		question: 'Имя настоящего отца Супермена?',//done2
 		answers: [
 			{ text: 'Джон-эл', correct: false },
-			{ text: 'Джон-эл', correct: false },
+			{ text: 'Джордж-эл', correct: false },
 			{ text: 'Джор-Эл', correct: true },
 			{ text: 'Карл-эл', correct: false },
 		]
