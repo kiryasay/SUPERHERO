@@ -5,6 +5,19 @@ body {
 section
 {
     min-height: 100vh;
+    overflow-y: auto;
+}
+
+section::-webkit-scrollbar{
+    width: 7px;
+}
+section::-webkit-scrollbar-track{
+    /* box-shadow: inset 0 0 6 rgba(0, 0, 0, 0.8); */
+    color: transparent;
+}
+section::-webkit-scrollbar-thumb{
+    background-color: #E42759;
+    /* border-radius: 5px; */
 }
 
 .welcome-text {
@@ -187,6 +200,12 @@ section
     letter-spacing: 2px;
 }
 
+@media (width >= 1400px){
+    .welcome-text {
+        padding-top: 0px;
+    }
+}
+
 @media (width < 1400px){
     .welcome-text{
         padding-top: 10px;
@@ -195,7 +214,7 @@ section
         font-size: 34px;
     }
     .underbecome-text{
-        17px
+        font-size: 17px;
     }
     .cards_block{
         margin-top: 20px;
@@ -245,6 +264,113 @@ section
     }
     .cards-text .heroes-text span{
         letter-spacing: 1px;
+    }
+}
+
+@media (width < 1200px){
+    .welcome-text{
+        padding-top: 10px;
+    }
+    .underbecome-text{
+        font-size: 17px;
+    }
+    .cards_block{
+        margin-top: 30px;
+        margin-left: 0;
+        gap: 35px;
+        height: auto;
+        width: 739px;
+    }
+    .cards_block .card{
+        width: 165px;
+        height: 165px;
+    }
+    .cards_block .card-marvel-bg .card_img{
+        width: 130px;
+        height: 52px;
+    }
+    .cards_block .card-dc-bg .card_img{
+        width: 95px;
+        height: 95px;
+    }
+    .cards_block .card-sw-bg .card_img{
+        width: 155px;
+        height: 155px;
+    }
+    .cards_block .card-tmnt-bg .card_img{
+        width: 137px;
+        height: 49px;
+    }
+    .cards_block .card .card-anime-logo{
+        margin-top: 16px;
+    }
+    .cards_block .card-anime-bg .card_img{
+        width: 137px;
+        height: 53px;
+    }
+    .cards_block .card:hover .card_img{
+        transform:
+            scale(1.05)
+            translateY(-0.2rem);
+    }
+    .cards-text{
+        width: 237px;
+        left: 672px;
+        bottom: 338px;
+        max-width: 291px;
+        height: 319px;
+        font-size: 17px;
+    }
+    .cards-text .heroes-text span{
+        letter-spacing: 1px;
+    }
+}
+
+@media (width < 992px){
+    .header{
+        padding: 5px 9px 23px 0;
+    }
+    .cards_block .card {
+        width: 135px;
+        height: 135px;
+    }
+    .become-text{
+        font-size: 30px;
+    }
+    .underbecome-text {
+        font-size: 15px;
+    }
+    .cards_block{
+        gap: 27px;
+        width: 560px;
+    }
+    .cards_block .card-marvel-bg .card_img {
+        width: 115px;
+        height: 46px;
+    }
+    .cards_block .card-dc-bg .card_img {
+        width: 88px;
+        height: 88px;
+    }
+    .cards_block .card-sw-bg .card_img {
+        width: 140px;
+        height: 140px;
+    }
+    .cards_block .card-tmnt-bg .card_img {
+        width: 124px;
+        height: 45px;
+    }
+    .cards_block .card-anime-bg .card_img {
+        width: 117px;
+        height: 45px;
+    }
+    .cards-text {
+        width: 185px;
+        left: 526px;
+        bottom: 274px;
+        max-width: 291px;
+        height: 233px;
+        font-size: 13px;
     }
 }
 

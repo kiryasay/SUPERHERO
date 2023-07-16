@@ -89,3 +89,38 @@ header {
 .find {
     margin-left: 55px;
 }
+
+@media (width < 1200px){
+    .logo_image{
+        width: 173px;
+        height: 59px;
+    }
+    .pages a{
+        font-size: 16px;
+    }
+    .find{
+        margin-left: 43px;
+    }
+}
+
+@media (width < 992px){
+    header {
+        height: 90px;
+    }
+    .logo_image{
+        width: 145px;
+        height: 62px;
+    }
+    .pages a{
+        font-size: 14px;
+    }
+    .random {
+        margin-left: 57px;
+    }
+    .browse-all {
+        margin-left: 65px;
+    }
+    .find {
+        margin-left: 30px;
+    }
+}
