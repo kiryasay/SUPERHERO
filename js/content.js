@@ -67,42 +67,6 @@ function showMovies(data) {
 		moviesEl.appendChild(movieEl);
 	});
 }
-function showMoviesBySearch(data) {
-	const moviesEl = document.querySelector('.movies');
-
-	// Очищаем предыдущие фильмы
-	document.querySelector('.movies').innerHTML = '';
-
-	data.films.forEach((movie) => {
-		const movieEl = document.createElement('div');
-		movieEl.classList.add('movie');
-		movieEl.innerHTML = `
-				<div class="movie__cover-inner">
-				<img
-					src="${movie.posterUrlPreview}"
-					class="movie__cover"
-					alt="${movie.nameRu}"
-				/>
-				<div class="movie__cover--darkened"></div>
-			</div>
-			<div class="movie__info">
-				<div class="movie__title">${(movie.nameRu != null) ? movie.nameRu : movie.nameEn}</div>
-				<div class="movie__category">${movie.genres.map(
-			(genre) => ` ${genre.genre}`
-		)}</div>
-				${movie.rating &&
-			`
-				<div class="movie__average movie__average--${getClassByRate(
-				movie.rating
-			)}">${(movie.rating == 'null') ? 0 : movie.rating}</div>
-				`
-			}
-			</div>
-				`;
-		movieEl.addEventListener('click', () => openModal(movie.filmId));
-		moviesEl.appendChild(movieEl);
-	});
-}
 
 const form = document.querySelector('form');
 const search = document.querySelector('.form-control');
