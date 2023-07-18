@@ -72,7 +72,7 @@ section::-webkit-scrollbar-thumb{
 
 .cards_block .card:hover .card_img{
     transform: 
-        scale(1.05)0376f2
+        scale(1.05)
         translateY(-0.3rem);
 }
 
@@ -373,37 +373,3 @@ section::-webkit-scrollbar-thumb{
         font-size: 13px;
     }
 }
-
-/* .wrap { стили для карточек
-    position: absolute;
-    width: 225px;
-    height: 225px;
-    left: 0;
-    top: 0;
-    display:block;
-}
-
-.marvel-card {
-    width: 225px;
-    height: 225px;
-    position: relative;
-    perspective: 1000px;
-}
-
-.front, .back {
-    position: absolute;
-    width: 225px;
-    height: 225px;
-    left: 0;
-    top: 0;
-    display: flex;
-    transition: 1s;
-    backface-visibility: hidden;
-}
-
-.back {
-    transform: rotateY(180deg);
-}
-
-.marvel-card:hover .front {transform: rotateY(180deg);}
-.marvel-card:hover .back {transform: rotateY(360deg);} */
